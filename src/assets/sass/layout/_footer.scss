@@ -8,11 +8,8 @@
 
 #footer {
   @include vendor('transition', 'opacity 0.5s ease-in-out');
-  bottom: 4em;
   color: _palette(fg-light);
-  left: 4em;
   opacity: 0.5;
-  position: fixed;
 
   .icons {
     margin: 0 0 (_size(element-margin) * 0.25) 0;
@@ -48,21 +45,6 @@
 
   > :last-child {
     margin-bottom: 0;
-  }
-
-  @include breakpoint('<=xlarge') {
-    bottom: 3.5em;
-    left: 3.5em;
-  }
-
-  @include breakpoint('<=small') {
-    bottom: 2em;
-    left: 2em;
-  }
-
-  @include breakpoint('<=xxsmall') {
-    bottom: 1.25em;
-    left: 1.25em;
   }
 
   @include breakpoint('short') {

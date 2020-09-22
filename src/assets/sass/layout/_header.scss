@@ -8,13 +8,15 @@
 
 	#header {
 		h1 {
-			font-size: 3.25em;
+			max-width: 826px;
+			font-size: 0em;
 			margin: 0 0 (_size(element-margin) * 0.275) 0;
 		}
 
 		p {
 			font-size: 1.35em;
 			line-height: 1.65em;
+			margin-top: 3rem;
 		}
 
 		a {
@@ -23,7 +25,7 @@
 
 		@include breakpoint('<=small') {
 			h1 {
-				font-size: 2em;
+				font-size: 0em;
 			}
 
 			p {

@@ -1,37 +1,36 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Eventually', // <title>
-  manifestName: 'Eventually',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Jupi Alimentos', // <title>
+  manifestName: 'Jupi Alimentos',
+  manifestShortName: 'Jupi', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-eventually/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/jupi-alimentos/`, // This path is subpath of your hosting https://domain/portfolio
   // social
-  heading: 'Eventually',
-  subHeading:
-    "A simple template for telling the world when you'll launch your next big thing.",
+  heading: 'Jupi Alimentos',
+  subHeading: 'Em breve você encontrará um site completo com todas as informações que você precisa.',
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      icon: 'fa-youtube',
+      name: 'Youtube',
+      url: 'https://youtube.com/jupialimentos'
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://instagram.com/jupialimentos'
     },
     {
       icon: 'fa-facebook',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://facebook.com/jupialimentos'
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
-    },
-  ],
-};
+      url: 'mailto:diretoria@jupialimentos.com'
+    }
+  ]
+}

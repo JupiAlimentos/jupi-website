@@ -1,28 +1,24 @@
-import React from 'react';
-import config from '../../config';
+import React from 'react'
+import config from '../../config'
 
-export default function Footer() {
+export default function Footer () {
   return (
-    <footer id="footer">
-      <ul className="icons">
+    <footer id='footer'>
+      <ul className='icons'>
         {config.socialLinks.map(social => {
-          const { icon, name, url } = social;
-          return (
-            <li>
-              <a href={url} class={`icon ${icon}`}>
-                <span class="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
+           const { icon, name, url } = social
+           return (
+             <li>
+               <a href={url} class={`icon ${icon}`}><span class='label'>{name}</span></a>
+             </li>
+           )
+         })}
       </ul>
-      <ul className="copyright">
-        <li>&copy; Eventually.</li>
+      <ul className='copyright'>
         <li>
-          Credits: <a href="http://unsplash.com/">Unsplash</a> +
-          <a href="http://html5up.net">HTML5 UP</a>
+          2020 © Jupi Alimentos   |   Todos os Diretios Reservados
         </li>
       </ul>
     </footer>
-  );
+  )
 }

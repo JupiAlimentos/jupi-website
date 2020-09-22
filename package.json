@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-eventually",
+  "name": "coming-soon-jupi",
   "version": "1.0.0",
-  "description": "Gatsby.js V2 starter template based on Eventually by HTML5 UP",
+  "description": "Landing page of Jupi Alimentos",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-eventually.git"
+    "url": "git+https://github.com/JupiAlimentos/coming-soon.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Lauriel Mesquita",
+    "email": "laurielmesquita@me.com"
   },
   "dependencies": {
     "gatsby": "^2.20.2",
@@ -37,12 +37,11 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-eventually"
+    "gatsby-starter"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-eventually/issues"
+    "url": "https://github.com/JupiAlimentos/coming-soon/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-eventually#readme"
+  "homepage": "https://github.com/JupiAlimentos/coming-soon#readme"
 }
