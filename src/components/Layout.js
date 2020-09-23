@@ -38,8 +38,8 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Jupi Alimentos' },
-                { name: 'keywords', content: 'site, web' },
+                { name: 'description', content: 'Produtos de alta qualidade para os consumidores mais exigentes!' },
+                { name: 'keywords', content: 'jupi, alimentos, flocão, milho, feijão, canjica' },
               ]}
             >
               <html lang="pt-br" />
