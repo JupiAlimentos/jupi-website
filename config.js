@@ -20,7 +20,7 @@ module.exports = {
     {
       icon: 'fa-instagram',
       name: 'Instagram',
-      url: 'https://instagram.com/jupialimentos'
+      url: 'https://instagram.com/jupioficial'
     },
     {
       icon: 'fa-facebook',
