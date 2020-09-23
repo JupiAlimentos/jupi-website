@@ -30,7 +30,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:diretoria@jupialimentos.com'
+      url: 'mailto:jupi@jupialimentos.com.br'
     }
   ]
 }
