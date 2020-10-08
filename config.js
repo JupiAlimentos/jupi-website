@@ -31,6 +31,11 @@ module.exports = {
       icon: 'fa-envelope-o',
       name: 'Email',
       url: 'mailto:jupi@jupialimentos.com.br'
+    },
+    {
+      icon: 'fa-phone',
+      name: 'Telefone',
+      url: 'tel:+55-86-2106-1710'
     }
   ]
 }
