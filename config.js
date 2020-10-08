@@ -10,7 +10,7 @@ module.exports = {
   pathPrefix: `/jupi-alimentos/`, // This path is subpath of your hosting https://domain/portfolio
   // social
   heading: 'Jupi Alimentos',
-  subHeading: 'Em breve você encontrará um site completo com todas as informações que você precisa.',
+  subHeading: 'Em breve você encontrará um site moderno e completo com todas as informações sobre a Jupi Alimentos.',
   socialLinks: [
     {
       icon: 'fa-youtube',
