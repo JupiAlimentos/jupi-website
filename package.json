@@ -1,25 +1,25 @@
 {
-  "name": "coming-soon-jupi",
+  "name": "jupi-website",
   "version": "1.0.0",
-  "description": "Landing page of Jupi Alimentos",
+  "description": "Website of Jupi Alimentos",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JupiAlimentos/coming-soon.git"
+    "url": "git+https://github.com/JupiAlimentos/jupi-website.git"
   },
   "author": {
     "name": "Lauriel Mesquita",
     "email": "laurielmesquita@me.com"
   },
   "dependencies": {
-    "gatsby": "^2.20.2",
-    "gatsby-plugin-manifest": "^2.3.1",
-    "gatsby-plugin-offline": "^3.1.0",
-    "gatsby-plugin-react-helmet": "^3.2.0",
-    "gatsby-plugin-sass": "^2.2.0",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "gatsby": "^2.31.0",
+    "gatsby-plugin-manifest": "^2.11.0",
+    "gatsby-plugin-offline": "^3.9.0",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-plugin-sass": "^3.1.0",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -31,8 +31,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.17.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   },
   "keywords": [
@@ -41,7 +41,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JupiAlimentos/coming-soon/issues"
+    "url": "https://github.com/JupiAlimentos/jupi-website/issues"
   },
-  "homepage": "https://github.com/JupiAlimentos/coming-soon#readme"
+  "homepage": "https://github.com/JupiAlimentos/jupi-website#readme"
 }

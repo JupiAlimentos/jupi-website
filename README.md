@@ -3,10 +3,10 @@
 </h1>
 
 <h2 align="center">
-  Landing page da Jupi Alimentos
+  Jupi Alimentos Website
 </h2>
 
-<br><br><br>
+<br><br>
 <p align="center">
   <img alt="May the Code Review be with you" src=".github/code_review.png" />
 </p>
