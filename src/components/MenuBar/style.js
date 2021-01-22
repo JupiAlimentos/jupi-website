@@ -2,9 +2,13 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const MenuHeader = styled.header`
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 90px;
-  background-color: aquamarine;
+  background-color: transparent;
+  z-index: 1;
 `
 
 export const MenuBrand = styled(Link)`
@@ -13,6 +17,7 @@ export const MenuBrand = styled(Link)`
   top: 10px;
   left: 50%;
   margin-left: -47.815px;
+  z-index: 2;
 
   img {
     display: block;
@@ -26,7 +31,11 @@ export const MenuWrapper = styled.div`
   justify-content: space-between;
   height: 100%;
   border-radius: 0 0 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: none;
   background-color: #fff;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
 
   ul {
     display: flex;

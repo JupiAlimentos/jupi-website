@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     letter-spacing: -.022em;
     text-rendering: optimizeLegibility;
+    background-color: #F1F1F1;
   }
 
   a {
