@@ -12,7 +12,7 @@ const links = {
     },
     {
       label: 'Receitas',
-      url: '/recetias',
+      url: '/receitas',
       title: 'Conheça as nossas receitas'
     }
   ],

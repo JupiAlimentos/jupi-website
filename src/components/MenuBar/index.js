@@ -1,24 +1,44 @@
 import React from 'react'
 
+import links from './data'
+
+import { MenuHeader, MenuWrapper, MenuLeft, MenuRight, MenuLink } from './style'
+
 const MenuBar = () => (
-  <header>
-    <nav className='container'>
-      <nav className='left'>
+  <MenuHeader>
+    <MenuWrapper className='container'>
+      <MenuLeft>
         <ul>
-          <li>Esquerda</li>
-          <li>Esquerda</li>
-          <li>Esquerda</li>
+          {links.left.map((link, i) => (
+            <li key={i}>
+              <MenuLink
+                to={link.url}
+                activeClassName='active'
+                title={link.title}
+              >
+                {link.label}
+              </MenuLink>
+            </li>
+          ))}
         </ul>
-      </nav>
-      <nav className='right'>
+      </MenuLeft>
+      <MenuRight>
         <ul>
-          <li>Direita</li>
-          <li>Direita</li>
-          <li>Direita</li>
+          {links.right.map((link, i) => (
+            <li key={i}>
+              <MenuLink
+                to={link.url}
+                activeClassName='active'
+                title={link.title}
+              >
+                {link.label}
+              </MenuLink>
+            </li>
+          ))}
         </ul>
-      </nav>
-    </nav>
-  </header>
+      </MenuRight>
+    </MenuWrapper>
+  </MenuHeader>
 )
 
 export default MenuBar
