@@ -7,28 +7,23 @@ const GlobalStyles = createGlobalStyle`
   ${grid}
   :root {
     font-size: 16px;
-    --brand: #4453a6;
-    --highlight: #526af2;
-    --theme: #5D6494;
-    --themeDark: #414771;
-    --themeLight: #A9B4F4;
-    --deepDark: #292b3d;
-    --visited: #5d6494;
-    --lightGreen: #e1f25e;
+    --body: #1C1D1F;
+    --highlight: #e02d2d;
   }
 
   body {
-    color: var(--theme);
+    color: var(--body);
     min-height: 100vh;
     scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+    font-family: Lato, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
     font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.022em;
+    text-rendering: optimizeLegibility;
   }
 
   a {
-    transition: color 0.3s;
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     
     &:not([class]) {
       text-decoration-skip-ink: auto;
@@ -45,8 +40,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.875rem;
   }

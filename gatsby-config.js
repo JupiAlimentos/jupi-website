@@ -5,6 +5,23 @@ module.exports = {
     author: `@laurielmesquita`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Raleway',
+              variants: ['500', '600']
+            },
+            {
+              family: 'Lato',
+              variants: ['400', '700', '900']
+            }
+          ]
+        }
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {

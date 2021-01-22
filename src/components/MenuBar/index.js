@@ -2,10 +2,22 @@ import React from 'react'
 
 import links from './data'
 
-import { MenuHeader, MenuWrapper, MenuLeft, MenuRight, MenuLink } from './style'
+import Brand from '../../images/jupi-brand.svg'
+
+import {
+  MenuHeader,
+  MenuWrapper,
+  MenuLeft,
+  MenuRight,
+  MenuLink,
+  MenuBrand
+} from './style'
 
 const MenuBar = () => (
   <MenuHeader>
+    <MenuBrand to='/'>
+      <img src={Brand} alt='Logo da Jupi Alimentos' />
+    </MenuBrand>
     <MenuWrapper className='container'>
       <MenuLeft>
         <ul>
