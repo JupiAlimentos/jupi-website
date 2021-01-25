@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import links from './data'
 
@@ -10,47 +10,75 @@ import {
   MenuLeft,
   MenuRight,
   MenuLink,
-  MenuBrand
+  MenuBrand,
+  MenuInput,
+  MenuLabel,
+  MenuList,
+  MenuBackground
 } from './style'
 
-const MenuBar = () => (
-  <MenuHeader>
-    <MenuBrand to='/'>
-      <img src={Brand} alt='Logo da Jupi Alimentos' />
-    </MenuBrand>
-    <MenuWrapper className='container'>
-      <MenuLeft>
-        <ul>
-          {links.left.map((link, i) => (
-            <li key={i}>
-              <MenuLink
-                to={link.url}
-                activeClassName='active'
-                title={link.title}
-              >
-                {link.label}
-              </MenuLink>
-            </li>
-          ))}
-        </ul>
-      </MenuLeft>
-      <MenuRight>
-        <ul>
-          {links.right.map((link, i) => (
-            <li key={i}>
-              <MenuLink
-                to={link.url}
-                activeClassName='active'
-                title={link.title}
-              >
-                {link.label}
-              </MenuLink>
-            </li>
-          ))}
-        </ul>
-      </MenuRight>
-    </MenuWrapper>
-  </MenuHeader>
-)
+const MenuBar = () => {
+  const [scroll, setScroll] = useState(false)
+
+  useEffect(() => {
+    const html = document.querySelector('html')
+    scroll
+      ? (html.style.overflow = 'hidden')
+      : (html.style.overflow = 'visible')
+  }, [scroll])
+
+  return (
+    <>
+      <MenuHeader>
+        <MenuInput
+          id='navbar'
+          onClick={() => setScroll(!scroll)}
+          type='checkbox'
+        />
+        <MenuLabel for='navbar'>
+          <div className='menuBox'>
+            <span className='menuBtn' />
+          </div>
+        </MenuLabel>
+        <MenuBrand to='/'>
+          <img src={Brand} alt='Logo da Jupi Alimentos' />
+        </MenuBrand>
+        <MenuBackground className='container' />
+        <MenuWrapper className='wrapperMenu container'>
+          <MenuLeft>
+            <MenuList>
+              {links.left.map((link, i) => (
+                <li key={i}>
+                  <MenuLink
+                    to={link.url}
+                    activeClassName='active'
+                    title={link.title}
+                  >
+                    {link.label}
+                  </MenuLink>
+                </li>
+              ))}
+            </MenuList>
+          </MenuLeft>
+          <MenuRight>
+            <MenuList>
+              {links.right.map((link, i) => (
+                <li key={i}>
+                  <MenuLink
+                    to={link.url}
+                    activeClassName='active'
+                    title={link.title}
+                  >
+                    {link.label}
+                  </MenuLink>
+                </li>
+              ))}
+            </MenuList>
+          </MenuRight>
+        </MenuWrapper>
+      </MenuHeader>
+    </>
+  )
+}
 
 export default MenuBar

@@ -11,7 +11,7 @@ export const HeroWrapper = styled.section`
   padding: calc(5vh + 96px) 0;
   margin: -90px auto 0;
   background-color: transparent;
-  z-index: 0;
+  z-index: -1;
 
   @media (min-width: 576px) {
     padding: calc(7vh + 6px) 0;
