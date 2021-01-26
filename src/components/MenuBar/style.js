@@ -51,13 +51,12 @@ export const MenuLabel = styled.label`
       margin-left: -25px;
       background-color: var(--yellow);
       border-radius: 50%;
-      box-shadow: 0 15px 30px 6px rgba(0, 0, 0, 0.2), 0 0 0 0 var(--yellow),
-        0 0 0 0 var(--yellow);
+      box-shadow: 0 0 0 0 var(--yellow), 0 0 0 0 var(--yellow);
       transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
       z-index: 4;
 
       &:hover {
-        box-shadow: 0 0 0 6px var(--highlight), 0 0 0 6px var(--highlight);
+        box-shadow: 0 0 0 4px var(--highlight), 0 0 0 4px var(--highlight);
       }
 
       .menuBtn {
