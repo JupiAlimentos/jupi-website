@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     --body: #1C1D1F;
     --highlight: #e02d2d;
+    --yellow: #FFEE00;
   }
 
   body {

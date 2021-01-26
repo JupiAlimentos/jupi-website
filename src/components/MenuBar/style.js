@@ -7,25 +7,34 @@ export const MenuInput = styled.input`
   @media (max-width: 991.98px) {
     &:checked ~ label .menuBox {
       position: fixed;
-      background-color: blue;
-      box-shadow: 0 0 0 140vw aquamarine, 0 0 0 140vh aquamarine;
-      /* box-shadow: 0 0 0 140vw transparent, 0 0 0 140vh transparent; */
+      background-color: var(--highlight);
+      box-shadow: 0 0 0 140vw var(--yellow), 0 0 0 140vh var(--yellow);
     }
+
     &:checked ~ label .menuBtn {
       transform: rotate(45deg);
     }
+
     &:checked ~ label .menuBtn:after {
       transform: rotate(90deg);
       bottom: 0;
     }
+
     &:checked ~ label .menuBtn:before {
       transform: rotate(90deg);
       top: 0;
     }
+
+    &:checked ~ label .menuBtn,
+    &:checked ~ label .menuBtn:after,
+    &:checked ~ label .menuBtn:before {
+      background-color: var(--yellow);
+    }
+
     &:checked ~ div.wrapperMenu {
       opacity: 1;
-      visibility: visible;
       z-index: 5;
+      transform: translate(-50%, -50%);
     }
   }
 `
@@ -40,14 +49,15 @@ export const MenuLabel = styled.label`
       width: 50px;
       height: 50px;
       margin-left: -25px;
-      background-color: red;
+      background-color: var(--yellow);
       border-radius: 50%;
-      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+      box-shadow: 0 15px 30px 6px rgba(0, 0, 0, 0.2), 0 0 0 0 var(--yellow),
+        0 0 0 0 var(--yellow);
       transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
       z-index: 4;
 
       &:hover {
-        box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+        box-shadow: 0 0 0 6px var(--highlight), 0 0 0 6px var(--highlight);
       }
 
       .menuBtn {
@@ -56,7 +66,7 @@ export const MenuLabel = styled.label`
         left: 13px;
         width: 24px;
         height: 2px;
-        background: #fff;
+        background-color: var(--highlight);
         display: block;
         transform-origin: center;
         transition: 0.5s ease-in-out;
@@ -68,7 +78,7 @@ export const MenuLabel = styled.label`
           position: absolute;
           width: 100%;
           height: 100%;
-          background: #fff;
+          background-color: var(--highlight);
           transition: 0.5s ease-in-out;
         }
 
@@ -111,28 +121,37 @@ export const MenuBackground = styled.div`
     border-radius: 0 0 10px 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-top: none;
-    background-color: #fff;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 90px;
     z-index: 0;
     opacity: 1;
     visibility: visible;
   }
+
+  @media (max-width: 575.98px) {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  @media (min-width: 992px) {
+    opacity: 0;
+    visibility: hidden;
+  }
 `
 
 export const MenuWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
 
   @media (min-width: 992px) {
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     border-radius: 0 0 10px 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-top: none;
-    background-color: #fff;
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255, 255, 255, 0.72);
   }
@@ -142,17 +161,26 @@ export const MenuWrapper = styled.div`
     top: 50%;
     left: 50%;
     width: 100%;
+    flex-direction: column;
     font-size: 2.8125rem;
     font-size: calc(32px + (60 - 32) * (100vw - 300px) / (1386 - 300));
+    text-align: center;
     line-height: 1.2;
     opacity: 0;
-    visibility: hidden;
-    transform: translate(-50%, -50%);
-    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+    transform: translate(-50%, 200%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
   }
 `
 
 export const MenuList = styled.ul`
+  @media (max-width: 991.98px) {
+    li {
+      margin-bottom: 1.4rem;
+    }
+  }
   @media (min-width: 992px) {
     display: flex;
     height: 100%;
@@ -198,10 +226,9 @@ export const MenuRight = styled.nav`
 
 export const MenuLink = styled(Link)`
   font-family: Raleway, sans-serif;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.231px;
-  opacity: 0.8;
+  opacity: 0.88;
 
   &:hover,
   &.active {
@@ -209,6 +236,8 @@ export const MenuLink = styled(Link)`
   }
 
   @media (min-width: 992px) {
+    font-weight: 600;
     font-size: 0.875rem;
+    opacity: 1;
   }
 `
