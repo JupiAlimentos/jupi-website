@@ -73,42 +73,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   // Helpers
-  .textCenter {
-    text-align: center;
-  }
-
-  .mgTop-100 {
-    margin-top: 3.75rem;
-
-    @media (min-width: 768px) {
-      margin-top: 4rem;
-    }
-
-    @media (min-width: 992px) {
-      margin-top: 4.725rem;
-    }
-
-    @media (min-width: 1200px) {
-      margin-top: 6.25rem;
-    }
-  }
-
-  .highlightInfo {
-    text-align: center;
-    display: inline-block;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 1.875rem;
-    font-size: calc(1rem + .3vw);
-  }
-
-  .gradientHenku {
-    background: linear-gradient(#e4e6f1 0%, #FFF 100%);
-    
-    &.inverse {
-      
-      background: linear-gradient(#FFF 0%, #e4e6f1 100%);
-    }
+  .pd-0 {
+    padding: 0;
   }
 
   .verticalSpacer {

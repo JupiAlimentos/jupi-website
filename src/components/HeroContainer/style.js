@@ -38,5 +38,22 @@ export const HeroSource = styled.img`
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: 0;
+  z-index: -1;
+`
+
+export const HeroTag = styled.span`
+  margin-bottom: 0.625rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+`
+
+export const HeroTitle = styled.h1`
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 67px;
+  letter-spacing: -0.02em;
+  line-height: 73px;
+  text-align: center;
+  color: hsla(220, 5, 12, 0.5);
 `

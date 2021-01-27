@@ -9,7 +9,11 @@ import bgImage from '../images/hero-background.jpg'
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
-    <Hero srcMedia={bgImage} />
+    <Hero
+      srcMedia={bgImage}
+      heroTag={'Família Jupi'}
+      heroTitle='Produtos de alta qualidade para os consumidores mais exigentes'
+    />
   </Layout>
 )
 
