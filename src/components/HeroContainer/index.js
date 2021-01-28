@@ -28,7 +28,7 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
             <HeroTag>{heroTag}</HeroTag>
             <HeroTitle>{heroTitle}</HeroTitle>
           </div>
-          <div className='col-12 verticalSpacer'>
+          <div className='col-12'>
             <Img fluid={heroImage.childImageSharp.fluid} alt='Família Jupi' />
           </div>
         </div>

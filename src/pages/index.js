@@ -14,14 +14,6 @@ const IndexPage = () => (
       heroTag={'Família Jupi'}
       heroTitle='Produtos de alta qualidade para os consumidores mais exigentes'
     />
-    <div className='container'>
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod
-        sint natus? Enim officia iure consequatur iste tempore ipsam neque
-        perspiciatis vero illum, repellat voluptas nobis vitae magni explicabo
-        laudantium?
-      </h1>
-    </div>
   </Layout>
 )
 

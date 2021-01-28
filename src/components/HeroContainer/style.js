@@ -8,25 +8,25 @@ export const HeroWrapper = styled.section`
   display: flex;
   align-items: center;
   text-align: center;
-  padding: calc(5vh + 96px) 0;
+  padding: 8.75rem 0 3.75rem;
   margin: -90px auto 0;
   background-color: transparent;
   z-index: 0;
 
   @media (min-width: 576px) {
-    padding: calc(7vh + 6px) 0;
+    padding: 9.375rem 0 4.375rem;
   }
 
   @media (min-width: 768px) {
-    padding: calc(10vh + 6px) 0;
+    padding: 10rem 0 5rem;
   }
 
   @media (min-width: 992px) {
-    padding: calc(13vh + 6px) 0;
+    padding: 10.625rem 0 5.625rem;
   }
 
   @media (min-width: 1200px) {
-    padding: calc(13vh + 96px) 0 calc(13vh + 6px);
+    padding: 12.25rem 0 6.25rem;
   }
 `
 
