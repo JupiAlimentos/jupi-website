@@ -2,7 +2,15 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { HeroWrapper, HeroSource, HeroTag, HeroTitle } from './style'
+import Button from '../Button'
+
+import {
+  HeroWrapper,
+  HeroSource,
+  HeroTag,
+  HeroTitle,
+  HeroProducts
+} from './style'
 
 const Hero = ({ srcMedia, heroTag, heroTitle }) => {
   const { heroImage } = useStaticQuery(
@@ -28,10 +36,17 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
             <HeroTag>{heroTag}</HeroTag>
             <HeroTitle>{heroTitle}</HeroTitle>
           </div>
-          <div className='col-12'>
+          <HeroProducts className='col-12'>
             <Img fluid={heroImage.childImageSharp.fluid} alt='Família Jupi' />
-          </div>
+          </HeroProducts>
         </div>
+        <Button
+          slug='/produtos'
+          buttonClass='yellowButton'
+          buttonTitle='Veja todos os produtos'
+        >
+          Veja todos os produtos
+        </Button>
       </div>
     </HeroWrapper>
   )

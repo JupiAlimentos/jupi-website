@@ -51,12 +51,11 @@ export const HeroTag = styled.span`
 `
 
 export const HeroTitle = styled.h1`
-  font-family: Lato;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--body);
+  margin-bottom: 0;
   font-size: 1.568rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--body);
 
   @media (min-width: 376px) {
     font-size: calc(1.499rem + 1.5vw);
@@ -79,4 +78,22 @@ export const HeroTitle = styled.h1`
   }
 `
 
-export const HeroProducts = styled.div``
+export const HeroProducts = styled.div`
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+
+  @media (min-width: 576px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+  }
+`

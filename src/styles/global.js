@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     
     &:not([class]) {
       text-decoration-skip-ink: auto;
