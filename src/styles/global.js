@@ -100,11 +100,6 @@ const GlobalStyles = createGlobalStyle`
       padding-top: 8.25rem;
       padding-bottom: 8.25rem;
     }
-    
-    @media (min-width: 1386px) {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-    }
   }
 `
 export default GlobalStyles
