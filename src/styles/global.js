@@ -78,8 +78,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .verticalSpacer {
-    padding-top: calc(13vw + 6px);
-    padding-bottom: calc(13vw + 6px);
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
 
     @media (min-width: 576px) {
       padding-top: 5rem;
