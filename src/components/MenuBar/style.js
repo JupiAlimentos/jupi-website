@@ -94,9 +94,11 @@ export const MenuLabel = styled.label`
 `
 
 export const MenuHeader = styled.header`
+  position: relative;
   width: 100%;
   height: 90px;
   background-color: transparent;
+  z-index: 1;
 `
 
 export const MenuBrand = styled(Link)`

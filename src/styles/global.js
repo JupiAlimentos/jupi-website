@@ -78,26 +78,32 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .verticalSpacer {
-    padding: calc(13vw + 6px) 0;
+    padding-top: calc(13vw + 6px);
+    padding-bottom: calc(13vw + 6px);
 
     @media (min-width: 576px) {
-      padding: 5rem 0;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
 
     @media (min-width: 768px) {
-      padding: 5.25rem 0;
+      padding-top: 5.25rem;
+      padding-bottom: 5.25rem;
     }
 
     @media (min-width: 992px) {
-      padding: 6.25rem 0;
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem;
     }
     
     @media (min-width: 1200px) {
-      padding: 8.25rem 0;
+      padding-top: 8.25rem;
+      padding-bottom: 8.25rem;
     }
     
     @media (min-width: 1386px) {
-      padding: 10rem 0;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
     }
   }
 `

@@ -11,7 +11,7 @@ export const HeroWrapper = styled.section`
   padding: calc(5vh + 96px) 0;
   margin: -90px auto 0;
   background-color: transparent;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: 576px) {
     padding: calc(7vh + 6px) 0;
@@ -38,10 +38,11 @@ export const HeroSource = styled.img`
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
+  z-index: -5;
 `
 
 export const HeroTag = styled.span`
+  display: block;
   margin-bottom: 0.625rem;
   font-size: 1.5rem;
   letter-spacing: -0.02em;
@@ -57,3 +58,5 @@ export const HeroTitle = styled.h1`
   text-align: center;
   color: hsla(220, 5, 12, 0.5);
 `
+
+export const HeroProducts = styled.div``
