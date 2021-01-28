@@ -47,16 +47,36 @@ export const HeroTag = styled.span`
   font-size: 1.5rem;
   letter-spacing: -0.02em;
   text-align: center;
+  color: hsla(220, 5%, 12%, 0.88);
 `
 
 export const HeroTitle = styled.h1`
   font-family: Lato;
   font-weight: bold;
-  font-size: 67px;
   letter-spacing: -0.02em;
-  line-height: 73px;
   text-align: center;
-  color: hsla(220, 5, 12, 0.5);
+  color: var(--body);
+  font-size: 1.568rem;
+
+  @media (min-width: 376px) {
+    font-size: calc(1.499rem + 1.5vw);
+  }
+
+  @media (min-width: 576px) {
+    font-size: calc(1.7rem + 1.5vw);
+  }
+
+  @media (min-width: 768px) {
+    font-size: calc(1.96rem + 1.5vw);
+  }
+
+  @media (min-width: 992px) {
+    font-size: calc(2rem + 1.5vw);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: calc(2rem + 2.5vw);
+  }
 `
 
 export const HeroProducts = styled.div``

@@ -10,7 +10,7 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
       query {
         heroImage: file(relativePath: { eq: "hero-products.png" }) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
+            fluid(maxWidth: 1400) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -24,7 +24,7 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
       <HeroSource src={srcMedia} />
       <div className='container'>
         <div className='row'>
-          <div className='col-10 pd-0'>
+          <div className='col-11 col-lg-10 pd-0'>
             <HeroTag>{heroTag}</HeroTag>
             <HeroTitle>{heroTitle}</HeroTitle>
           </div>
