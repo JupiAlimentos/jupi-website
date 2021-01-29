@@ -45,7 +45,7 @@ export const MenuLabel = styled.label`
       cursor: pointer;
       position: fixed;
       left: 50%;
-      bottom: 14px;
+      bottom: 24px;
       width: 50px;
       height: 50px;
       margin-left: -25px;

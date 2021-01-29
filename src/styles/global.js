@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-family: Lato, sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.1;
     margin-bottom: 1.875rem;
   }

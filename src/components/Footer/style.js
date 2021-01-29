@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   padding-top: 4.375rem;
   padding-bottom: 6.875rem;
 
-  div.container div.row div {
+  div.container > div.row > div:nth-child(1) {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ export const FooterWrapper = styled.footer`
   }
 
   small {
-    margin-top: 43px;
+    margin-top: 34px;
     font-size: 0.8625rem;
     opacity: 0.75;
   }

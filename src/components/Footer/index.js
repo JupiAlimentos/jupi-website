@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SocialLinks from '../SocialLinks'
+
 import links from '../MenuBar/data'
 
 import {
@@ -52,7 +54,10 @@ const Footer = () => (
             </MenuList>
           </MenuRight>
         </div>
-        <small>&copy; Copyright 2020, Henku Corporation</small>
+        <div className='col-12'>
+          <SocialLinks />
+        </div>
+        <small>Jupi Alimentos © 2021. Todos os direitos reservados</small>
       </div>
     </div>
   </FooterWrapper>
