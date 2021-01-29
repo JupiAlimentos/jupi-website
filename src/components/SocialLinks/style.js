@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SocielLinksWrapper = styled.div`
+export const SocialLinksWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 188px;

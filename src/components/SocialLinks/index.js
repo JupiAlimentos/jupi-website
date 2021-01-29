@@ -4,10 +4,10 @@ import React from 'react'
 import Icons from './Icons'
 import links from './data'
 
-import { SocialLink, SocialLinkIcon, SocielLinksWrapper } from './style'
+import { SocialLink, SocialLinkIcon, SocialLinksWrapper } from './style'
 
 const SocialLinks = () => (
-  <SocielLinksWrapper>
+  <SocialLinksWrapper>
     {links.map((link, i) => {
       const Icon = Icons[link.label]
 
@@ -25,7 +25,7 @@ const SocialLinks = () => (
         </SocialLink>
       )
     })}
-  </SocielLinksWrapper>
+  </SocialLinksWrapper>
 )
 
 export default SocialLinks
