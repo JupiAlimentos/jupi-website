@@ -52,29 +52,29 @@ export const HeroTag = styled.span`
 
 export const HeroTitle = styled.h1`
   margin-bottom: 0;
-  font-size: 1.568rem;
+  font-size: 1.36rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: var(--body);
+  color: var(--color-body);
 
   @media (min-width: 376px) {
-    font-size: calc(1.499rem + 1.5vw);
+    font-size: calc(1.23rem + 1.5vw);
   }
 
   @media (min-width: 576px) {
-    font-size: calc(1.7rem + 1.5vw);
+    font-size: calc(1.16rem + 1.5vw);
   }
 
   @media (min-width: 768px) {
-    font-size: calc(1.96rem + 1.5vw);
+    font-size: calc(1.6rem + 1.5vw);
   }
 
   @media (min-width: 992px) {
-    font-size: calc(2rem + 1.5vw);
+    font-size: calc(2rem + 1.4vw);
   }
 
   @media (min-width: 1200px) {
-    font-size: calc(2rem + 2.5vw);
+    font-size: calc(2rem + 2vw);
   }
 `
 

@@ -12,11 +12,11 @@ module.exports = {
           google: [
             {
               family: 'Raleway',
-              variants: ['500', '600']
+              variants: ['500', '600', '700']
             },
             {
-              family: 'Lato',
-              variants: ['400', '700', '900']
+              family: 'Poppins',
+              variants: ['600', '700']
             }
           ]
         }

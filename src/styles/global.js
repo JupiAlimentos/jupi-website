@@ -7,16 +7,18 @@ const GlobalStyles = createGlobalStyle`
   ${grid}
   :root {
     font-size: 16px;
-    --body: #1C1D1F;
+    --body-font: Raleway;
+    --header-font: Poppins;
+    --color-body: #1C1D1F;
     --highlight: #e02d2d;
     --yellow: #FFEE00;
   }
 
   body {
-    color: var(--body);
+    color: var(--color-body);
     min-height: 100vh;
     scroll-behavior: smooth;
-    font-family: Lato, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+    font-family: var(--body-font), -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: -.022em;
@@ -42,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: Lato, sans-serif;
+    font-family: var(--header-font), sans-serif;
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 1.875rem;

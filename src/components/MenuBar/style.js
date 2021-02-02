@@ -226,7 +226,7 @@ export const MenuRight = styled.nav`
 `
 
 export const MenuLink = styled(Link)`
-  font-family: Raleway, sans-serif;
+  font-family: var(--body-font), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.231px;
   opacity: 0.88;
