@@ -3,11 +3,12 @@ import { Link } from 'gatsby'
 
 export const ButtonWrapper = styled(Link)`
   display: inline-block;
-  padding: 1.063rem 1.75rem;
+  padding: 1rem 1.75rem;
   font-size: 0.813rem;
-  font-weight: 700;
+  line-height: 16px;
+  font-weight: 600;
   text-transform: uppercase;
-  border-radius: 1.563rem;
+  border-radius: 5.625rem;
 
   &.yellowButton {
     color: hsla(220, 5%, 10%, 0.84);

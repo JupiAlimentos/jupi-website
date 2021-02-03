@@ -2,7 +2,14 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { HighlightsWrapper } from './style'
+import Button from '../Button'
+
+import {
+  HighlightsWrapper,
+  Highlight,
+  HighlightTitle,
+  HighlightInfo
+} from './style'
 
 const Highlights = () => {
   const {
@@ -51,38 +58,86 @@ const Highlights = () => {
 
   return (
     <section className='container'>
-      <HighlightsWrapper className='row'>
-        <div className='col-4'>
-          <div className='inner'>
+      <HighlightsWrapper className='row verticalSpacer'>
+        <div className='col-12'>
+          <Highlight>
+            <HighlightTitle>Goma Para Tapioca</HighlightTitle>
             <Img
               fluid={productImage01.childImageSharp.fluid}
               alt='Família Jupi'
             />
-          </div>
+            <HighlightInfo>
+              A tapioca nossa de cada dia é consumida de várias formas e deixou
+              de ser só mais…
+            </HighlightInfo>
+            <Button
+              slug='/produtos'
+              buttonClass='yellowButton'
+              buttonTitle='Saiba mais'
+            >
+              Saiba mais
+            </Button>
+          </Highlight>
         </div>
-        <div className='col-4'>
-          <div className='inner'>
+        <div className='col-12'>
+          <Highlight>
+            <HighlightTitle>Fava</HighlightTitle>
             <Img
               fluid={productImage02.childImageSharp.fluid}
               alt='Família Jupi'
             />
-          </div>
+            <HighlightInfo>
+              A tapioca nossa de cada dia é consumida de várias formas e deixou
+              de ser só mais…
+            </HighlightInfo>
+            <Button
+              slug='/produtos'
+              buttonClass='yellowButton'
+              buttonTitle='Saiba mais'
+            >
+              Saiba mais
+            </Button>
+          </Highlight>
         </div>
-        <div className='col-4'>
-          <div className='inner'>
+        <div className='col-12'>
+          <Highlight>
+            <HighlightTitle>Flocão de Milho</HighlightTitle>
             <Img
               fluid={productImage03.childImageSharp.fluid}
               alt='Família Jupi'
             />
-          </div>
+            <HighlightInfo>
+              A tapioca nossa de cada dia é consumida de várias formas e deixou
+              de ser só mais…
+            </HighlightInfo>
+            <Button
+              slug='/produtos'
+              buttonClass='yellowButton'
+              buttonTitle='Saiba mais'
+            >
+              Saiba mais
+            </Button>
+          </Highlight>
         </div>
-        <div className='col-4'>
-          <div className='inner'>
+        <div className='col-12'>
+          <Highlight>
+            <HighlightTitle>Flocão de Arroz</HighlightTitle>
             <Img
               fluid={productImage04.childImageSharp.fluid}
               alt='Família Jupi'
             />
-          </div>
+            <HighlightInfo>
+              A tapioca nossa de cada dia é consumida de várias formas e deixou
+              de ser só mais…
+            </HighlightInfo>
+            <Button
+              slug='/produtos'
+              buttonClass='yellowButton'
+              buttonTitle='Saiba mais'
+            >
+              Saiba mais
+            </Button>
+          </Highlight>
         </div>
       </HighlightsWrapper>
     </section>

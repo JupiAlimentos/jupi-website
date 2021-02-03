@@ -7,19 +7,20 @@ const GlobalStyles = createGlobalStyle`
   ${grid}
   :root {
     font-size: 16px;
-    --body-font: Raleway;
     --header-font: Poppins;
-    --color-body: #1C1D1F;
+    --body-font: Raleway;
+    --body-color: #6e7078;
+    --header-color: #1c1d1f;
     --highlight: #e02d2d;
     --yellow: #FFEE00;
   }
 
   body {
-    color: var(--color-body);
+    color: var(--body-color);
     min-height: 100vh;
     scroll-behavior: smooth;
     font-family: var(--body-font), -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: -.022em;
     text-rendering: optimizeLegibility;
@@ -44,10 +45,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.875rem;
     font-family: var(--header-font), sans-serif;
     font-weight: 900;
     line-height: 1.1;
-    margin-bottom: 1.875rem;
+    color: var(--header-color);
   }
 
   h1 {
@@ -104,4 +106,5 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 `
+
 export default GlobalStyles

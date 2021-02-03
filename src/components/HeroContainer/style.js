@@ -55,7 +55,6 @@ export const HeroTitle = styled.h1`
   font-size: 1.36rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: var(--color-body);
 
   @media (min-width: 376px) {
     font-size: calc(1.23rem + 1.5vw);
