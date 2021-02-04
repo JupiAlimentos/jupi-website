@@ -81,7 +81,7 @@ export const Highlight = styled.div`
 
   & > [class^='ButtonWrapper'],
   & > [class*='_ButtonWrapper'] {
-    margin-top: 38px;
+    margin-top: 2.375rem;
   }
 
   @media (min-width: 992px) {
@@ -99,14 +99,14 @@ export const Highlight = styled.div`
   .gatsby-image-wrapper {
     margin: 0 5%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 `
 
 export const HighlightTitle = styled.h3`
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.875rem;
 `
 
 export const HighlightWrapperInfo = styled.div`
