@@ -6,7 +6,7 @@ export const ButtonWrapper = styled(Link)`
   padding: 1rem 1.75rem;
   font-size: 0.813rem;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 5.625rem;
 

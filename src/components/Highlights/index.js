@@ -8,6 +8,7 @@ import {
   HighlightsWrapper,
   Highlight,
   HighlightTitle,
+  HighlightWrapperInfo,
   HighlightInfo
 } from './style'
 
@@ -66,10 +67,14 @@ const Highlights = () => {
               fluid={productImage01.childImageSharp.fluid}
               alt='Família Jupi'
             />
-            <HighlightInfo>
-              A tapioca nossa de cada dia é consumida de várias formas e deixou
-              de ser só mais…
-            </HighlightInfo>
+            <HighlightWrapperInfo>
+              <HighlightInfo>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                commodi ipsa ex, quos, animi quae omnis aliquam porro sunt
+                impedit consequatur. Quod accusamus sit velit, molestias quo
+                maiores quasi deserunt.
+              </HighlightInfo>
+            </HighlightWrapperInfo>
             <Button
               slug='/produtos'
               buttonClass='yellowButton'
@@ -86,10 +91,14 @@ const Highlights = () => {
               fluid={productImage02.childImageSharp.fluid}
               alt='Família Jupi'
             />
-            <HighlightInfo>
-              A tapioca nossa de cada dia é consumida de várias formas e deixou
-              de ser só mais…
-            </HighlightInfo>
+            <HighlightWrapperInfo>
+              <HighlightInfo>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
+                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
+                amet doloribus temporibus ea odit possimus.
+              </HighlightInfo>
+            </HighlightWrapperInfo>
             <Button
               slug='/produtos'
               buttonClass='yellowButton'
@@ -106,10 +115,14 @@ const Highlights = () => {
               fluid={productImage03.childImageSharp.fluid}
               alt='Família Jupi'
             />
-            <HighlightInfo>
-              A tapioca nossa de cada dia é consumida de várias formas e deixou
-              de ser só mais…
-            </HighlightInfo>
+            <HighlightWrapperInfo>
+              <HighlightInfo>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
+                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
+                amet doloribus temporibus ea odit possimus.
+              </HighlightInfo>
+            </HighlightWrapperInfo>
             <Button
               slug='/produtos'
               buttonClass='yellowButton'
@@ -126,10 +139,14 @@ const Highlights = () => {
               fluid={productImage04.childImageSharp.fluid}
               alt='Família Jupi'
             />
-            <HighlightInfo>
-              A tapioca nossa de cada dia é consumida de várias formas e deixou
-              de ser só mais…
-            </HighlightInfo>
+            <HighlightWrapperInfo>
+              <HighlightInfo>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
+                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
+                amet doloribus temporibus ea odit possimus.
+              </HighlightInfo>
+            </HighlightWrapperInfo>
             <Button
               slug='/produtos'
               buttonClass='yellowButton'

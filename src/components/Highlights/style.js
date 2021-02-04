@@ -11,27 +11,32 @@ export const HighlightsWrapper = styled.div`
 
   & > [class^='col-'],
   & > [class*=' col-'] {
-    width: 90%;
+    width: 100%;
   }
 
   @media (min-width: 576px) {
     padding-top: 5rem;
     padding-bottom: 5rem;
-
-    & > [class^='col-'],
-    & > [class*=' col-'] {
-      width: 45%;
-    }
   }
 
   @media (min-width: 768px) {
     padding-top: 5.25rem;
     padding-bottom: 5.25rem;
+
+    & > [class^='col-'],
+    & > [class*=' col-'] {
+      width: 70%;
+    }
   }
 
   @media (min-width: 992px) {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
+
+    & > [class^='col-'],
+    & > [class*=' col-'] {
+      width: 47.5555555555%;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -43,7 +48,7 @@ export const HighlightsWrapper = styled.div`
   @media (min-width: 1400px) {
     & > [class^='col-'],
     & > [class*=' col-'] {
-      width: 31.3333333333%;
+      width: 32.2222222222%;
     }
   }
 
@@ -69,20 +74,22 @@ export const HighlightsWrapper = styled.div`
 `
 
 export const Highlight = styled.div`
-  padding: 1rem;
+  padding: 2.75rem 1.5rem;
   text-align: center;
   border-radius: 1.25rem;
   background-color: #fff;
 
-  @media (min-width: 768px) {
+  & > [class^='ButtonWrapper'],
+  & > [class*='_ButtonWrapper'] {
+    margin-top: 38px;
   }
 
   @media (min-width: 992px) {
-    padding: 1.5rem;
+    padding: 2.75rem 1.5rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 2rem;
+    padding: 3.25rem 2rem;
   }
 
   @media (min-width: 1400px) {
@@ -102,6 +109,11 @@ export const HighlightTitle = styled.h3`
   font-size: 30px;
 `
 
-export const HighlightInfo = styled.p`
-  margin-bottom: 38px;
+export const HighlightWrapperInfo = styled.div`
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 `
+
+export const HighlightInfo = styled.p``
