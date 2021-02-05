@@ -111,6 +111,26 @@ const GlobalStyles = createGlobalStyle`
       padding-bottom: 8.25rem;
     }
   }
+  
+  .bottomSpacer {
+    padding-bottom: 4.375rem;
+
+    @media (min-width: 576px) {
+      padding-bottom: 5rem;
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 5.25rem;
+    }
+
+    @media (min-width: 992px) {
+      padding-bottom: 6.25rem;
+    }
+    
+    @media (min-width: 1200px) {
+      padding-bottom: 8.25rem;
+    }
+  }
 `
 
 export default GlobalStyles

@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Meet = () => (
-  <div className='container verticalSpacer'>
+  <div className='container bottomSpacer'>
     <div className='row'>
-      <h2>Conheça a Jupi</h2>
+      <h2 className='sectionHeadings'>Conheça a Jupi</h2>
     </div>
   </div>
 )

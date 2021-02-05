@@ -25,8 +25,8 @@ export const HighlightsWrapper = styled.div`
   flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: 3.375rem;
-  margin-bottom: 2rem;
+  padding-bottom: 1.375rem;
+  margin-bottom: 6rem;
 
   & > [class^='col-'],
   & > [class*=' col-'] {
@@ -34,12 +34,8 @@ export const HighlightsWrapper = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 576px) {
-    padding-bottom: 4rem;
-  }
-
   @media (min-width: 768px) {
-    padding-bottom: 4.25rem;
+    padding-bottom: 2rem;
 
     & > [class^='col-'],
     & > [class*=' col-'] {
@@ -48,8 +44,6 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    padding-bottom: 6.25rem;
-
     & > [class^='col-'],
     & > [class*=' col-'] {
       width: 47.5555555555%;
@@ -57,8 +51,6 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 1200px) {
-    padding-bottom: 6.25rem;
-
     & > [class^='col-'],
     & > [class*=' col-'] {
       width: 38.2222222222%;
