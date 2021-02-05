@@ -82,7 +82,7 @@ export const HighlightsWrapper = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    /* visibility: hidden; */
+    visibility: hidden;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     transition: all 1s ease-in-out;

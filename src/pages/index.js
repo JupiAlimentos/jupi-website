@@ -17,7 +17,7 @@ const IndexPage = () => (
       heroTitle='Produtos de alta qualidade para os consumidores mais exigentes'
     />
     <Highlights />
-    {/* <Meet /> */}
+    <Meet />
   </Layout>
 )
 
