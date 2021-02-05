@@ -30,6 +30,7 @@ export const HighlightsWrapper = styled.div`
 
   & > [class^='col-'],
   & > [class*=' col-'] {
+    display: flex;
     width: 100%;
   }
 
@@ -93,6 +94,8 @@ export const HighlightsWrapper = styled.div`
 `
 
 export const Highlight = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 2.75rem 1.5rem;
   text-align: center;
   border-radius: 1.25rem;
@@ -100,7 +103,8 @@ export const Highlight = styled.div`
 
   & > [class^='ButtonWrapper'],
   & > [class*='_ButtonWrapper'] {
-    margin-top: 2.375rem;
+    margin-top: auto;
+    align-self: center;
   }
 
   @media (min-width: 992px) {
@@ -133,6 +137,7 @@ export const HighlightWrapperInfo = styled.div`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-bottom: 2.375rem;
 `
 
 export const HighlightInfo = styled.p``
