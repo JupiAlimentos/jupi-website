@@ -25,7 +25,8 @@ export const HighlightsWrapper = styled.div`
   flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: 4.375rem;
+  padding-bottom: 3.375rem;
+  margin-bottom: 2rem;
 
   & > [class^='col-'],
   & > [class*=' col-'] {
@@ -33,11 +34,11 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 576px) {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
 
   @media (min-width: 768px) {
-    padding-bottom: 5.25rem;
+    padding-bottom: 4.25rem;
 
     & > [class^='col-'],
     & > [class*=' col-'] {
@@ -55,7 +56,6 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 2rem;
     padding-bottom: 6.25rem;
 
     & > [class^='col-'],
@@ -81,7 +81,7 @@ export const HighlightsWrapper = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    visibility: hidden;
+    /* visibility: hidden; */
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     transition: all 1s ease-in-out;
