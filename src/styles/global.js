@@ -81,6 +81,12 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  .sectionHeadings {
+    padding: 0 40px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+  }
+
   .verticalSpacer {
     padding-top: 4.375rem;
     padding-bottom: 4.375rem;

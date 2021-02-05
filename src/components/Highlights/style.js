@@ -1,12 +1,30 @@
 import styled from 'styled-components'
 
+export const HighlightsSpacer = styled.section`
+  padding-top: 4.375rem;
+
+  @media (min-width: 576px) {
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 5.25rem;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 6.25rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 8.25rem;
+  }
+`
+
 export const HighlightsWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
-
-  padding-top: 4.375rem;
   padding-bottom: 4.375rem;
 
   & > [class^='col-'],
@@ -15,12 +33,10 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 576px) {
-    padding-top: 5rem;
     padding-bottom: 5rem;
   }
 
   @media (min-width: 768px) {
-    padding-top: 5.25rem;
     padding-bottom: 5.25rem;
 
     & > [class^='col-'],
@@ -30,7 +46,6 @@ export const HighlightsWrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 
     & > [class^='col-'],
@@ -41,8 +56,12 @@ export const HighlightsWrapper = styled.div`
 
   @media (min-width: 1200px) {
     margin-bottom: 2rem;
-    padding-top: 8.25rem;
     padding-bottom: 6.25rem;
+
+    & > [class^='col-'],
+    & > [class*=' col-'] {
+      width: 38.2222222222%;
+    }
   }
 
   @media (min-width: 1400px) {

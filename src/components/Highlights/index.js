@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Button from '../Button'
 
 import {
+  HighlightsSpacer,
   HighlightsWrapper,
   Highlight,
   HighlightTitle,
@@ -58,8 +59,9 @@ const Highlights = () => {
   )
 
   return (
-    <section className='container'>
-      <HighlightsWrapper className='row verticalSpacer'>
+    <HighlightsSpacer className='container'>
+      <h2 className='sectionHeadings'>Destaques</h2>
+      <HighlightsWrapper className='row'>
         <div className='col-12'>
           <Highlight>
             <HighlightTitle>Goma Para Tapioca</HighlightTitle>
@@ -157,7 +159,7 @@ const Highlights = () => {
           </Highlight>
         </div>
       </HighlightsWrapper>
-    </section>
+    </HighlightsSpacer>
   )
 }
 
