@@ -81,10 +81,8 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  .sectionHeadings {
-    padding: 0 40px;
-    font-weight: bold;
-    letter-spacing: -0.02em;
+  .pd-40 {
+    padding: 2.5rem;
   }
 
   .verticalSpacer {
@@ -130,6 +128,30 @@ const GlobalStyles = createGlobalStyle`
     @media (min-width: 1200px) {
       padding-bottom: 8.25rem;
     }
+  }
+
+  // General
+  .sectionHeadings {
+    padding: 0 40px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+  }
+
+  .baseBox {
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+
+  .titleBox {
+    margin-bottom: 0.625rem;
+    font-weight: 600;
+    font-size: 1.438rem;
+    line-height: 1.2;
+  }
+
+  .infoBox {
+    margin-bottom: 2.5rem;
+    font-size: 18px;
   }
 `
 
