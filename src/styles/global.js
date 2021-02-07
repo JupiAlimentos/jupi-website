@@ -77,6 +77,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   // Helpers
+  .d-flex {
+    display: flex;
+  }
+
   .pd-0 {
     padding: 0;
   }
@@ -138,8 +142,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .baseBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: #FFF;
     border-radius: 20px;
+  }
+
+  .baseBox > [class^='ButtonWrapper'],
+  .baseBox > [class*='_ButtonWrapper'] {
+    margin-top: auto;
+    align-self: auto;
+    text-align: center;
   }
 
   .titleBox {
