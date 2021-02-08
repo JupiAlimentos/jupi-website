@@ -88,7 +88,7 @@ export const HighlightsWrapper = styled.div`
 export const Highlight = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2.75rem 1.5rem;
+  padding: 2.75rem 1.625rem;
   text-align: center;
   border-radius: 1.25rem;
   background-color: #fff;
@@ -99,8 +99,28 @@ export const Highlight = styled.div`
     align-self: center;
   }
 
-  @media (min-width: 992px) {
-    padding: 2.75rem 1.5rem;
+  .gatsby-image-wrapper {
+    margin: 0 5%;
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  @media (max-width: 1199.98px) {
+    .gatsby-image-wrapper {
+      width: 74%;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .gatsby-image-wrapper {
+      width: 64%;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  @media (min-width: 576px) {
+    padding: 2.75rem 2rem;
   }
 
   @media (min-width: 1200px) {
@@ -110,18 +130,16 @@ export const Highlight = styled.div`
   @media (min-width: 1400px) {
     padding: 3.75rem 2.5rem;
   }
-
-  .gatsby-image-wrapper {
-    margin: 0 5%;
-    display: block;
-    margin-bottom: 0.625rem;
-  }
 `
 
 export const HighlightTitle = styled.h3`
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.875rem;
+
+  @media (max-width: 376px) {
+    font-size: 1.75rem;
+  }
 `
 
 export const HighlightWrapperInfo = styled.div`

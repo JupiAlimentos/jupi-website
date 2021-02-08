@@ -20,13 +20,13 @@ const Meet = () => (
   <div className='container bottomSpacer'>
     <h2 className='sectionHeadings'>Conheça a Jupi</h2>
     <div className='row'>
-      <div className='col-8 d-flex'>
+      <div className='mb-sm-40 col-md-6 col-xl-8 d-flex'>
         <div className='baseBox pd-40'>
           <h3>Conheça a Jupi</h3>
         </div>
       </div>
-      <div className='col-4 d-flex'>
-        <div className='baseBox pd-40'>
+      <div className='col-md-6 col-xl-4 d-flex'>
+        <div className='baseBox'>
           <h3 className='titleBox'>Onde encontrar nossos produtos?</h3>
           <p className='infoBox'>
             Aqui você encontra uma lista sempre atualizada dos nossos parceiros

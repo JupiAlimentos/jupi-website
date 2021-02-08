@@ -48,7 +48,7 @@ const GlobalStyles = createGlobalStyle`
     margin-bottom: 1.875rem;
     font-family: var(--header-font), sans-serif;
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--header-color);
   }
 
@@ -85,8 +85,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  .pd-40 {
-    padding: 2.5rem;
+  .mb-sm-40 {
+    @media (max-width: 767.98px) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   .verticalSpacer {
@@ -136,7 +138,7 @@ const GlobalStyles = createGlobalStyle`
 
   // General
   .sectionHeadings {
-    padding: 0 40px;
+    padding: 0 2.5rem;
     font-weight: bold;
     letter-spacing: -0.02em;
   }
@@ -147,6 +149,14 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     background-color: #FFF;
     border-radius: 20px;
+
+    @media (max-width: 1199.98px) {
+      padding: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 2.5rem;
+    }
   }
 
   .baseBox > [class^='ButtonWrapper'],
@@ -154,18 +164,22 @@ const GlobalStyles = createGlobalStyle`
     margin-top: auto;
     align-self: auto;
     text-align: center;
+    font-size: 0.875rem;
   }
 
   .titleBox {
     margin-bottom: 0.625rem;
     font-weight: 600;
     font-size: 1.438rem;
-    line-height: 1.2;
   }
 
   .infoBox {
     margin-bottom: 2.5rem;
-    font-size: 18px;
+    font-size: 0.938rem;
+
+    @media (min-width: 1400px) {
+      font-size: 1.125rem;
+    }
   }
 `
 

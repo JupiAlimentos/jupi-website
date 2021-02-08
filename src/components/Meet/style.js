@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const AttendanceList = styled.ul`
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.375rem;
 `
 
 export const AttendanceItem = styled.li`
@@ -15,6 +15,16 @@ export const AttendanceItem = styled.li`
   &:last-of-type > div:after {
     height: 0;
     background-color: transparent;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 `
 
@@ -34,10 +44,14 @@ export const AttendanceContent = styled.div`
     height: 1px;
     background-color: #e4e7eb;
   }
+
+  @media (min-width: 768px) {
+    max-width: 68%;
+  }
 `
 
 export const AttendanceTitle = styled.h4`
-  margin-bottom: 0.563rem;
+  margin-bottom: 0.313rem;
   font-family: var(--body-font);
   font-weight: 700;
   font-size: 1rem;
