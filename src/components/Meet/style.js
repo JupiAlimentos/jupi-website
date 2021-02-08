@@ -26,6 +26,7 @@ export const AttendanceItem = styled.li`
   img {
     width: 70px;
     height: 70px;
+    border-radius: var(--bdr-8);
 
     @media (min-width: 768px) and (max-width: 991.98px) {
       width: 60px;
@@ -67,4 +68,8 @@ export const AttendanceLink = styled(Link)`
   font-weight: 500;
   font-size: 0.938rem;
   color: var(--highlight);
+
+  .dark & {
+    color: var(--yellow);
+  }
 `

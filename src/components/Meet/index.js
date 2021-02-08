@@ -35,7 +35,7 @@ const Meet = () => (
               <AttendanceContent>
                 <AttendanceTitle>Extra Supermercado</AttendanceTitle>
                 <AttendanceLink to='/atendimento'>
-                  Onde encontrar >
+                  Onde encontrar ›
                 </AttendanceLink>
               </AttendanceContent>
               <img src={partiner01} alt='Extra Supermercado' />
@@ -44,7 +44,7 @@ const Meet = () => (
               <AttendanceContent>
                 <AttendanceTitle>Atacadão Supermercado</AttendanceTitle>
                 <AttendanceLink to='/atendimento'>
-                  Onde encontrar >
+                  Onde encontrar ›
                 </AttendanceLink>
               </AttendanceContent>
               <img src={partiner02} alt='Atacadão Supermercado' />
@@ -53,7 +53,7 @@ const Meet = () => (
               <AttendanceContent>
                 <AttendanceTitle>Hiper Bompreço</AttendanceTitle>
                 <AttendanceLink to='/atendimento'>
-                  Onde encontrar >
+                  Onde encontrar ›
                 </AttendanceLink>
               </AttendanceContent>
               <img src={partiner03} alt='Hiper Bompreço' />
@@ -62,7 +62,7 @@ const Meet = () => (
               <AttendanceContent>
                 <AttendanceTitle>Comercial Carvalho Atacado</AttendanceTitle>
                 <AttendanceLink to='/atendimento'>
-                  Onde encontrar >
+                  Onde encontrar ›
                 </AttendanceLink>
               </AttendanceContent>
               <img src={partiner04} alt='Comercial Carvalho Atacado' />
@@ -71,7 +71,7 @@ const Meet = () => (
               <AttendanceContent>
                 <AttendanceTitle>Assaí Atacadista</AttendanceTitle>
                 <AttendanceLink to='/atendimento'>
-                  Onde encontrar >
+                  Onde encontrar ›
                 </AttendanceLink>
               </AttendanceContent>
               <img src={partiner05} alt='Assaí Atacadista' />

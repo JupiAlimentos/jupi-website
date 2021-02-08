@@ -13,6 +13,9 @@ const GlobalStyles = createGlobalStyle`
     --header-color: #1c1d1f;
     --highlight: #e02d2d;
     --yellow: #FFEE00;
+    --bdr-40: 2.5rem;
+    --bdr-20: 1.25rem;
+    --bdr-8: 0.5rem;
   }
 
   body {
@@ -148,7 +151,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .gradientDarkRed {
-    border-radius: 1.25rem 1.25rem 0 0;
+    border-radius: var(--bdr-20) var(--bdr-20) 0 0;
     background: linear-gradient(90deg, #420d0d 0%, #6b1515 100%);
   }
 
@@ -157,7 +160,7 @@ const GlobalStyles = createGlobalStyle`
     flex-direction: column;
     width: 100%;
     background-color: #FFF;
-    border-radius: 1.25rem;
+    border-radius: var(--bdr-20);
     overflow: hidden;
 
     &.dark {
@@ -166,13 +169,13 @@ const GlobalStyles = createGlobalStyle`
         color: #FFF;
 
         @media (min-width: 1200px) {
-          width: 60%;
+          width: 63%;
         }
       }
 
       .infoBox {
-        margin-bottom: 0;
-        opacity: 0.7;
+        margin-bottom: 1rem;
+        opacity: 0.73;
       }
     }
 

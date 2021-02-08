@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
 
+import { AttendanceLink } from './style'
+
 const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(
     graphql`
@@ -26,13 +28,14 @@ const BackgroundSection = ({ className }) => {
       Tag='section'
       className={className}
       fluid={imageData}
-      backgroundColor={`#040e18`}
+      backgroundColor='#1c1d1f'
     >
       <div className='gradientDarkRed pd-40'>
-        <h3 className='titleBox'>Conheça a Jupi</h3>
+        <h3 className='titleBox'>Visite a Jupi</h3>
         <p className='infoBox'>
-          Texto explicativo para a chamada aqui, que tenha esse comprimento.
+          Conheça a nossa história, a nossa cultura e os nossos valores.
         </p>
+        <AttendanceLink to='/sobre'>Saiba mais ›</AttendanceLink>
       </div>
     </BackgroundImage>
   )

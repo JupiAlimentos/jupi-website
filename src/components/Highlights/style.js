@@ -76,7 +76,7 @@ export const HighlightsWrapper = styled.div`
   &::-webkit-scrollbar-thumb {
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: var(--bdr-20);
     transition: all 1s ease-in-out;
   }
 
@@ -90,7 +90,7 @@ export const Highlight = styled.div`
   flex-direction: column;
   padding: 2.75rem 1.625rem;
   text-align: center;
-  border-radius: 1.25rem;
+  border-radius: var(--bdr-20);
   background-color: #fff;
 
   & > [class^='ButtonWrapper'],
