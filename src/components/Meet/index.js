@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Button from '../Button'
+import StyledBackgroundSection from './StyledBG'
 
 import {
   AttendanceList,
@@ -18,12 +19,10 @@ import partiner05 from '../../images/partners/partner-5.jpg'
 
 const Meet = () => (
   <div className='container bottomSpacer'>
-    <h2 className='sectionHeadings'>Conheça a Jupi</h2>
+    <h2 className='sectionHeadings'>Jupi Alimentos</h2>
     <div className='row'>
       <div className='mb-sm-40 col-md-6 col-xl-8 d-flex'>
-        <div className='baseBox pd-40'>
-          <h3>Conheça a Jupi</h3>
-        </div>
+        <StyledBackgroundSection className='baseBox dark pd-0' />
       </div>
       <div className='col-md-6 col-xl-4 d-flex'>
         <div className='baseBox'>

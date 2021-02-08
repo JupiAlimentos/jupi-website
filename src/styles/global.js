@@ -82,7 +82,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .pd-0 {
-    padding: 0;
+    padding: 0 !important;
+  }
+
+  .pd-40 {
+      padding: 2.5rem;
   }
 
   .mb-sm-40 {
@@ -143,12 +147,34 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: -0.02em;
   }
 
+  .gradientDarkRed {
+    border-radius: 1.25rem 1.25rem 0 0;
+    background: linear-gradient(90deg, #420d0d 0%, #6b1515 100%);
+  }
+
   .baseBox {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    &.dark {
+      .titleBox,
+      .infoBox {
+        color: #FFF;
+
+        @media (min-width: 1200px) {
+          width: 60%;
+        }
+      }
+
+      .infoBox {
+        margin-bottom: 0;
+        opacity: 0.7;
+      }
+    }
 
     @media (max-width: 1199.98px) {
       padding: 2rem;

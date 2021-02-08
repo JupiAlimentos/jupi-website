@@ -12,6 +12,12 @@ export const AttendanceItem = styled.li`
   margin-bottom: 0.938rem;
   padding-bottom: 0.875rem;
 
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+
   &:last-of-type > div:after {
     height: 0;
     background-color: transparent;
