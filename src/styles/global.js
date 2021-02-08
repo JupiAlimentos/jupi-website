@@ -1,10 +1,15 @@
 import { createGlobalStyle } from 'styled-components'
 import reset from './reset'
 import grid from './grid'
+import helpers from './helpers'
+import general from './general'
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
   ${grid}
+  ${helpers}
+  ${general}
+  
   :root {
     font-size: 16px;
     --header-font: Poppins;
@@ -77,138 +82,6 @@ const GlobalStyles = createGlobalStyle`
   ::selection {
     color: #FFF;
     background: var(--highlight);
-  }
-
-  // Helpers
-  .d-flex {
-    display: flex;
-  }
-
-  .pd-0 {
-    padding: 0 !important;
-  }
-
-  .pd-40 {
-      padding: 2.5rem;
-  }
-
-  .mb-sm-40 {
-    @media (max-width: 767.98px) {
-      margin-bottom: 2.5rem;
-    }
-  }
-
-  .verticalSpacer {
-    padding-top: 4.375rem;
-    padding-bottom: 4.375rem;
-
-    @media (min-width: 576px) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-
-    @media (min-width: 768px) {
-      padding-top: 5.25rem;
-      padding-bottom: 5.25rem;
-    }
-
-    @media (min-width: 992px) {
-      padding-top: 6.25rem;
-      padding-bottom: 6.25rem;
-    }
-    
-    @media (min-width: 1200px) {
-      padding-top: 8.25rem;
-      padding-bottom: 8.25rem;
-    }
-  }
-  
-  .bottomSpacer {
-    padding-bottom: 4.375rem;
-
-    @media (min-width: 576px) {
-      padding-bottom: 5rem;
-    }
-
-    @media (min-width: 768px) {
-      padding-bottom: 5.25rem;
-    }
-
-    @media (min-width: 992px) {
-      padding-bottom: 6.25rem;
-    }
-    
-    @media (min-width: 1200px) {
-      padding-bottom: 8.25rem;
-    }
-  }
-
-  // General
-  .sectionHeadings {
-    padding: 0 2.5rem;
-    font-weight: bold;
-    letter-spacing: -0.02em;
-  }
-
-  .gradientDarkRed {
-    border-radius: var(--bdr-20) var(--bdr-20) 0 0;
-    background: linear-gradient(90deg, #420d0d 0%, #6b1515 100%);
-  }
-
-  .baseBox {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #FFF;
-    border-radius: var(--bdr-20);
-    overflow: hidden;
-
-    &.dark {
-      .titleBox,
-      .infoBox {
-        color: #FFF;
-
-        @media (min-width: 1200px) {
-          width: 63%;
-        }
-      }
-
-      .infoBox {
-        margin-bottom: 1rem;
-        opacity: 0.73;
-      }
-    }
-
-    @media (max-width: 1199.98px) {
-      padding: 2rem;
-    }
-
-    @media (min-width: 1200px) {
-      padding: 2.5rem;
-    }
-  }
-
-  .baseBox > [class^='ButtonWrapper'],
-  .baseBox > [class*='_ButtonWrapper'] {
-    margin-top: auto;
-    align-self: auto;
-    text-align: center;
-    font-size: 0.875rem;
-  }
-
-  .titleBox {
-    margin-bottom: 0.625rem;
-    font-weight: 600;
-    font-size: 1.438rem;
-  }
-
-  .infoBox {
-    margin-bottom: 2.5rem;
-    font-size: 0.938rem;
-
-    @media (min-width: 1400px) {
-      font-size: 1.125rem;
-    }
   }
 `
 
