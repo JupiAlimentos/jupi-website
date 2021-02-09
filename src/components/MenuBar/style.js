@@ -7,8 +7,8 @@ export const MenuInput = styled.input`
   @media (max-width: 991.98px) {
     &:checked ~ label .menuBox {
       position: fixed;
-      background-color: var(--highlight);
-      box-shadow: 0 0 0 140vw var(--yellow), 0 0 0 140vh var(--yellow);
+      background-color: var(--header-color);
+      box-shadow: 0 0 0 140vw #fff, 0 0 0 140vh #fff;
     }
 
     &:checked ~ label .menuBtn {
@@ -28,7 +28,7 @@ export const MenuInput = styled.input`
     &:checked ~ label .menuBtn,
     &:checked ~ label .menuBtn:after,
     &:checked ~ label .menuBtn:before {
-      background-color: var(--yellow);
+      background-color: #fff;
     }
 
     &:checked ~ div.wrapperMenu {
@@ -49,14 +49,15 @@ export const MenuLabel = styled.label`
       width: 50px;
       height: 50px;
       margin-left: -25px;
-      background-color: var(--yellow);
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 50%;
-      box-shadow: 0 0 0 0 var(--yellow), 0 0 0 0 var(--yellow);
+      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
       transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
       z-index: 4;
 
       &:hover {
-        box-shadow: 0 0 0 4px var(--highlight), 0 0 0 4px var(--highlight);
+        box-shadow: 0 0 0 4px #fff, 0 0 0 4px #fff;
       }
 
       .menuBtn {
@@ -65,7 +66,7 @@ export const MenuLabel = styled.label`
         left: 13px;
         width: 24px;
         height: 2px;
-        background-color: var(--highlight);
+        background-color: var(--header-color);
         display: block;
         transform-origin: center;
         transition: 0.5s ease-in-out;
@@ -77,7 +78,7 @@ export const MenuLabel = styled.label`
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: var(--highlight);
+          background-color: var(--header-color);
           transition: 0.5s ease-in-out;
         }
 
@@ -158,13 +159,15 @@ export const MenuWrapper = styled.div`
   }
 
   @media (max-width: 991.98px) {
+    color: var(--header-color);
     position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;
     flex-direction: column;
+    font-weight: 600;
     font-size: 2.8125rem;
-    font-size: calc(32px + (60 - 32) * (100vw - 300px) / (1386 - 300));
+    font-size: calc(28px + (38 - 28) * (100vw - 300px) / (1386 - 300));
     text-align: center;
     line-height: 1.2;
     opacity: 0;
