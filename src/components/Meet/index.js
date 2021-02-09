@@ -79,7 +79,7 @@ const Meet = () => (
           </AttendanceList>
           <Button
             slug='/atendimento'
-            buttonClass='yellowButton'
+            buttonClass='primaryButton'
             buttonTitle='Veja a lista completa'
           >
             Veja a lista completa

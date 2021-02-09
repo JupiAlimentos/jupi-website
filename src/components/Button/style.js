@@ -10,13 +10,23 @@ export const ButtonWrapper = styled(Link)`
   text-transform: uppercase;
   border-radius: 5.625rem;
 
-  &.yellowButton {
+  &.primaryButton {
     color: hsla(220, 5%, 10%, 0.84);
     background-color: var(--yellow);
 
     &:hover {
       color: #fff;
       background-color: var(--highlight);
+    }
+  }
+
+  &.secondaryButton {
+    color: hsla(220, 5%, 10%, 0.84);
+    background-color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--header-color);
     }
   }
 

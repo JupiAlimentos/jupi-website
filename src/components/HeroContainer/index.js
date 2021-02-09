@@ -42,7 +42,7 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
         </div>
         <Button
           slug='/produtos'
-          buttonClass='yellowButton'
+          buttonClass='primaryButton'
           buttonTitle='Veja todos os produtos'
         >
           Veja todos os produtos

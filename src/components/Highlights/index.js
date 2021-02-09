@@ -79,7 +79,7 @@ const Highlights = () => {
             </HighlightWrapperInfo>
             <Button
               slug='/produtos'
-              buttonClass='yellowButton'
+              buttonClass='primaryButton'
               buttonTitle='Saiba mais'
             >
               Saiba mais
@@ -103,7 +103,7 @@ const Highlights = () => {
             </HighlightWrapperInfo>
             <Button
               slug='/produtos'
-              buttonClass='yellowButton'
+              buttonClass='primaryButton'
               buttonTitle='Saiba mais'
             >
               Saiba mais
@@ -127,7 +127,7 @@ const Highlights = () => {
             </HighlightWrapperInfo>
             <Button
               slug='/produtos'
-              buttonClass='yellowButton'
+              buttonClass='primaryButton'
               buttonTitle='Saiba mais'
             >
               Saiba mais
@@ -151,7 +151,7 @@ const Highlights = () => {
             </HighlightWrapperInfo>
             <Button
               slug='/produtos'
-              buttonClass='yellowButton'
+              buttonClass='primaryButton'
               buttonTitle='Saiba mais'
             >
               Saiba mais
