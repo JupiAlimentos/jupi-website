@@ -1,10 +1,8 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
-
-import { AttendanceLink } from './style'
 
 const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(
@@ -35,7 +33,9 @@ const BackgroundSection = ({ className }) => {
         <p className='infoBox'>
           Conheça a nossa história, a nossa cultura e os nossos valores.
         </p>
-        <AttendanceLink to='/sobre'>Saiba mais ›</AttendanceLink>
+        <Link className='linkText' to='/sobre'>
+          Saiba mais <span className='arrow' />
+        </Link>
       </div>
     </BackgroundImage>
   )

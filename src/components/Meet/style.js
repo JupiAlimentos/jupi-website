@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
 export const AttendanceList = styled.ul`
   margin-bottom: 0.375rem;
@@ -62,14 +61,4 @@ export const AttendanceTitle = styled.h4`
   font-family: var(--body-font);
   font-weight: 700;
   font-size: 1rem;
-`
-
-export const AttendanceLink = styled(Link)`
-  font-weight: 500;
-  font-size: 0.938rem;
-  color: var(--highlight);
-
-  .dark & {
-    color: var(--yellow);
-  }
 `

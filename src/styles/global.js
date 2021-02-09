@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   ${grid}
   ${helpers}
   ${general}
-  
+
   :root {
     font-size: 16px;
     --header-font: Poppins;

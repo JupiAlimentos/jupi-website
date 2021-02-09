@@ -1,6 +1,7 @@
 import { css } from 'styled-components'
 
 export const general = css`
+  // Headings
   .sectionHeadings {
     padding: 0 2.5rem;
     font-weight: bold;
@@ -12,6 +13,7 @@ export const general = css`
     background: linear-gradient(90deg, #420d0d 0%, #6b1515 100%);
   }
 
+  // Base Box
   .baseBox {
     display: flex;
     flex-direction: column;
@@ -65,6 +67,78 @@ export const general = css`
 
     @media (min-width: 1400px) {
       font-size: 1.125rem;
+    }
+  }
+
+  // Link text
+  .linkText {
+    display: flex;
+    margin-right: auto;
+    position: relative;
+    padding-right: 13px;
+    font-weight: 600;
+    font-size: 0.938rem;
+    color: var(--highlight);
+
+    .dark & {
+      display: inline-block;
+      color: var(--yellow);
+      font-weight: 500;
+
+      & span.arrow {
+        opacity: 0.75;
+      }
+
+      & span.arrow:before,
+      & span.arrow:after {
+        border-color: var(--yellow);
+      }
+    }
+
+    span.arrow {
+      position: absolute;
+      right: 0;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      box-sizing: border-box;
+      opacity: 1;
+      transform: rotate(45deg);
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        transition: 0.2s ease;
+        display: block;
+        transform-origin: 100% 0;
+      }
+
+      &:after {
+        content: '';
+        float: left;
+        position: relative;
+        top: -100%;
+        width: 100%;
+        height: 50%;
+        border-width: 0 2px 0 0;
+        border-style: solid;
+        opacity: 0;
+        transform: translate(-1%, 30%) rotate(45deg);
+        transform-origin: 100% 0;
+        transition: 0.4s ease;
+      }
+    }
+    &:hover {
+      padding-right: 20px;
+
+      span.arrow:after {
+        height: 140%;
+        transform-origin: 107% -15%;
+        opacity: 1;
+      }
     }
   }
 `

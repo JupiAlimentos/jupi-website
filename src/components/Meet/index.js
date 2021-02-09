@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Button from '../Button'
 import StyledBackgroundSection from './StyledBG'
@@ -6,7 +7,6 @@ import StyledBackgroundSection from './StyledBG'
 import {
   AttendanceList,
   AttendanceTitle,
-  AttendanceLink,
   AttendanceItem,
   AttendanceContent
 } from './style'
@@ -34,45 +34,45 @@ const Meet = () => (
             <AttendanceItem>
               <AttendanceContent>
                 <AttendanceTitle>Extra Supermercado</AttendanceTitle>
-                <AttendanceLink to='/atendimento'>
-                  Onde encontrar ›
-                </AttendanceLink>
+                <Link className='linkText' to='/atendimento'>
+                  Onde encontrar <span className='arrow' />
+                </Link>
               </AttendanceContent>
               <img src={partiner01} alt='Extra Supermercado' />
             </AttendanceItem>
             <AttendanceItem>
               <AttendanceContent>
                 <AttendanceTitle>Atacadão Supermercado</AttendanceTitle>
-                <AttendanceLink to='/atendimento'>
-                  Onde encontrar ›
-                </AttendanceLink>
+                <Link className='linkText' to='/atendimento'>
+                  Onde encontrar <span className='arrow' />
+                </Link>
               </AttendanceContent>
               <img src={partiner02} alt='Atacadão Supermercado' />
             </AttendanceItem>
             <AttendanceItem>
               <AttendanceContent>
                 <AttendanceTitle>Hiper Bompreço</AttendanceTitle>
-                <AttendanceLink to='/atendimento'>
-                  Onde encontrar ›
-                </AttendanceLink>
+                <Link className='linkText' to='/atendimento'>
+                  Onde encontrar <span className='arrow' />
+                </Link>
               </AttendanceContent>
               <img src={partiner03} alt='Hiper Bompreço' />
             </AttendanceItem>
             <AttendanceItem>
               <AttendanceContent>
                 <AttendanceTitle>Comercial Carvalho Atacado</AttendanceTitle>
-                <AttendanceLink to='/atendimento'>
-                  Onde encontrar ›
-                </AttendanceLink>
+                <Link className='linkText' to='/atendimento'>
+                  Onde encontrar <span className='arrow' />
+                </Link>
               </AttendanceContent>
               <img src={partiner04} alt='Comercial Carvalho Atacado' />
             </AttendanceItem>
             <AttendanceItem>
               <AttendanceContent>
                 <AttendanceTitle>Assaí Atacadista</AttendanceTitle>
-                <AttendanceLink to='/atendimento'>
-                  Onde encontrar ›
-                </AttendanceLink>
+                <Link className='linkText' to='/atendimento'>
+                  Onde encontrar <span className='arrow' />
+                </Link>
               </AttendanceContent>
               <img src={partiner05} alt='Assaí Atacadista' />
             </AttendanceItem>
