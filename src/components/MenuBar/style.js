@@ -165,7 +165,6 @@ export const MenuWrapper = styled.div`
     left: 50%;
     width: 100%;
     flex-direction: column;
-    font-weight: 600;
     font-size: 2.8125rem;
     font-size: calc(28px + (38 - 28) * (100vw - 300px) / (1386 - 300));
     text-align: center;
