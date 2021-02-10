@@ -13,7 +13,7 @@ const IndexPage = () => (
     <SEO title='Home' />
     <Hero
       srcMedia={bgImage}
-      heroTag={'Família Jupi'}
+      heroTag='Família Jupi'
       heroTitle='Produtos de alta qualidade para os consumidores mais exigentes'
     />
     <Highlights />

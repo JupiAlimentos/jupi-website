@@ -128,7 +128,7 @@ export const general = css`
         opacity: 0;
         transform: translate(-1%, 30%) rotate(45deg);
         transform-origin: 100% 0;
-        transition: 0.4s ease;
+        transition: 0.3s ease;
       }
     }
     &:hover {
