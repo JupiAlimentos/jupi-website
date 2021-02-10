@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Hero from '../components/HeroContainer'
 import Highlights from '../components/Highlights'
 import Meet from '../components/Meet'
+import SocialActions from '../components/SocialActions'
 
 import bgImage from '../images/hero-background.jpg'
 
@@ -18,6 +19,7 @@ const IndexPage = () => (
     />
     <Highlights />
     <Meet />
+    <SocialActions />
   </Layout>
 )
 

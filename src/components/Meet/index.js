@@ -18,13 +18,13 @@ import partiner04 from '../../images/partners/partner-4.jpg'
 import partiner05 from '../../images/partners/partner-5.jpg'
 
 const Meet = () => (
-  <div className='container bottomSpacer'>
+  <section className='container bottomSpacer'>
     <h2 className='sectionHeadings'>Jupi Alimentos</h2>
     <div className='row'>
       <div className='mb-sm-40 col-md-6 col-xl-8 d-flex'>
         <StyledBackgroundSection className='baseBox dark pd-0' />
       </div>
-      <div className='col-md-6 col-xl-4 d-flex'>
+      <aside className='col-md-6 col-xl-4 d-flex'>
         <div className='baseBox'>
           <h3 className='titleBox'>Onde encontrar nossos produtos?</h3>
           <p className='infoBox'>
@@ -85,9 +85,9 @@ const Meet = () => (
             Veja a lista completa
           </Button>
         </div>
-      </div>
+      </aside>
     </div>
-  </div>
+  </section>
 )
 
 export default Meet

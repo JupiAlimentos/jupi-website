@@ -70,6 +70,16 @@ export const general = css`
     }
   }
 
+  // Card Box
+  .cardBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: var(--bdr-20);
+    overflow: hidden;
+  }
+
   // Link text
   .linkText {
     display: flex;
