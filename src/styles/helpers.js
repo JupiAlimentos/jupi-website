@@ -1,6 +1,10 @@
 import { css } from 'styled-components'
 
 export const helpers = css`
+  .txt-center {
+    text-align: center;
+  }
+
   .d-flex {
     display: flex;
   }

@@ -24,7 +24,7 @@ export const CardBoxWrapper = styled.article`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 991.98px) {
     [class^='col-']:first-child &,
     [class*=' col-']:first-child & {
       margin-bottom: 2.5rem;

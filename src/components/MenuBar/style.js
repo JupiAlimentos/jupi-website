@@ -144,10 +144,9 @@ export const MenuBackground = styled.div`
   }
 `
 
-export const MenuWrapper = styled.div`
-  display: flex;
-
+export const InnerBg = styled.div`
   @media (min-width: 992px) {
+    display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
@@ -155,7 +154,17 @@ export const MenuWrapper = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-top: none;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.62);
+  }
+`
+
+export const MenuWrapper = styled.div`
+  display: flex;
+
+  @media (min-width: 992px) {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 991.98px) {
@@ -201,7 +210,7 @@ export const MenuLeft = styled.nav`
       margin-right: 32px;
 
       &:first-child {
-        margin-left: 20px;
+        margin-left: 40px;
       }
 
       &:last-child {
@@ -221,7 +230,7 @@ export const MenuRight = styled.nav`
       }
 
       &:last-child {
-        margin-right: 20px;
+        margin-right: 40px;
       }
     }
   }

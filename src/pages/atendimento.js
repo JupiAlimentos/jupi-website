@@ -6,7 +6,9 @@ import SEO from '../components/seo'
 const Attendance = () => (
   <Layout>
     <SEO title='Atendimento' />
-    <h1>Página de Atendimento</h1>
+    <section className='container mt-40'>
+      <h1 className='txt-center'>Página de Atendimento</h1>
+    </section>
   </Layout>
 )
 

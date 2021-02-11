@@ -6,7 +6,9 @@ import SEO from '../components/seo'
 const Recipes = () => (
   <Layout>
     <SEO title='Receitas' />
-    <h1>Página de Receitas</h1>
+    <section className='container mt-40'>
+      <h1 className='txt-center'>Página de Receitas</h1>
+    </section>
   </Layout>
 )
 

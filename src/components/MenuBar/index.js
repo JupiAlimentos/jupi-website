@@ -14,7 +14,8 @@ import {
   MenuInput,
   MenuLabel,
   MenuList,
-  MenuBackground
+  MenuBackground,
+  InnerBg
 } from './style'
 
 const MenuBar = () => {
@@ -45,36 +46,38 @@ const MenuBar = () => {
         </MenuBrand>
         <MenuBackground className='container' />
         <MenuWrapper className='wrapperMenu container'>
-          <MenuLeft>
-            <MenuList>
-              {links.left.map((link, i) => (
-                <li key={i}>
-                  <MenuLink
-                    to={link.url}
-                    activeClassName='active'
-                    title={link.title}
-                  >
-                    {link.label}
-                  </MenuLink>
-                </li>
-              ))}
-            </MenuList>
-          </MenuLeft>
-          <MenuRight>
-            <MenuList>
-              {links.right.map((link, i) => (
-                <li key={i}>
-                  <MenuLink
-                    to={link.url}
-                    activeClassName='active'
-                    title={link.title}
-                  >
-                    {link.label}
-                  </MenuLink>
-                </li>
-              ))}
-            </MenuList>
-          </MenuRight>
+          <InnerBg>
+            <MenuLeft>
+              <MenuList>
+                {links.left.map((link, i) => (
+                  <li key={i}>
+                    <MenuLink
+                      to={link.url}
+                      activeClassName='active'
+                      title={link.title}
+                    >
+                      {link.label}
+                    </MenuLink>
+                  </li>
+                ))}
+              </MenuList>
+            </MenuLeft>
+            <MenuRight>
+              <MenuList>
+                {links.right.map((link, i) => (
+                  <li key={i}>
+                    <MenuLink
+                      to={link.url}
+                      activeClassName='active'
+                      title={link.title}
+                    >
+                      {link.label}
+                    </MenuLink>
+                  </li>
+                ))}
+              </MenuList>
+            </MenuRight>
+          </InnerBg>
         </MenuWrapper>
       </MenuHeader>
     </>
