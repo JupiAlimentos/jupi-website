@@ -22,12 +22,12 @@ export const ButtonWrapper = styled(Link)`
   }
 
   &.secondaryButton {
-    color: hsla(220, 5%, 10%, 0.84);
-    background-color: #fff;
+    color: #fff;
+    background-color: var(--header-color);
 
     &:hover {
-      color: #fff;
-      background-color: var(--header-color);
+      color: hsla(220, 5%, 10%, 0.84);
+      background-color: #fff;
     }
   }
 

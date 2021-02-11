@@ -100,6 +100,12 @@ export const MenuHeader = styled.header`
   height: 90px;
   background-color: transparent;
   z-index: 1;
+
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
 `
 
 export const MenuBrand = styled(Link)`
@@ -108,23 +114,27 @@ export const MenuBrand = styled(Link)`
   top: 10px;
   left: 50%;
   margin-left: -47.815px;
-  z-index: 1;
+  z-index: 999;
 
   img {
     display: block;
     width: 95.63px;
     height: 70px;
   }
+
+  @media (max-width: 991.98px) {
+    position: fixed;
+  }
 `
 
 export const MenuBackground = styled.div`
   @media (max-width: 991.98px) {
-    position: relative;
+    position: fixed;
     border-radius: 0 0 10px 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-top: none;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.62);
     width: 100%;
     height: 90px;
     z-index: 0;
