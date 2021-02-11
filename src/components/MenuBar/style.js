@@ -98,7 +98,8 @@ export const MenuLabel = styled.label`
 `
 
 export const MenuHeader = styled.header`
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 90px;
   background-color: transparent;
@@ -116,7 +117,7 @@ export const MenuBrand = styled(Link)`
   display: block;
   top: 10px;
   left: 50%;
-  margin-left: calc(-47.815px / 2);
+  margin-left: calc(-95.63px / 2);
   z-index: 4;
 
   img {
@@ -190,12 +191,12 @@ export const MenuWrapper = styled.div`
   @media (max-width: 991.98px) {
     color: var(--header-color);
     position: fixed;
-    top: 50%;
+    top: 53%;
     left: 50%;
     width: 100%;
     flex-direction: column;
     font-size: 2.8125rem;
-    font-size: calc(28px + (38 - 28) * (100vw - 300px) / (1386 - 300));
+    font-size: calc(24px + (32 - 24) * (100vw - 375px) / (1386 - 375));
     text-align: center;
     line-height: 1.2;
     opacity: 0;

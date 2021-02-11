@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    margin-top: 5.625rem;
     color: var(--body-color);
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -33,6 +34,10 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: -.022em;
     text-rendering: optimizeLegibility;
     background-color: #F1F1F1;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4.688rem;
+    }
   }
 
   a {

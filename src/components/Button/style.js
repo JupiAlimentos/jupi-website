@@ -41,11 +41,7 @@ export const ButtonWrapper = styled(Link)`
     }
   }
 
-  @media (min-width: 768px) {
-    font-size: 0.938rem;
-  }
-
-  @media (max-width: 991.98px) {
-    font-size: 0.813rem !important;
+  @media (min-width: 992px) {
+    font-size: 0.875rem;
   }
 `
