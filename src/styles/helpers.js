@@ -5,6 +5,10 @@ export const helpers = css`
     display: flex;
   }
 
+  .flex-drct {
+    flex-direction: column;
+  }
+
   .pd-0 {
     padding: 0 !important;
   }
@@ -13,8 +17,26 @@ export const helpers = css`
     padding: 2.5rem;
   }
 
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .ml-auto {
+    margin-left: auto;
+  }
+
+  .mt-40 {
+    margin-top: 2.5rem;
+  }
+
   .mb-sm-40 {
     @media (max-width: 767.98px) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .mb-md-40 {
+    @media (max-width: 991.98px) {
       margin-bottom: 2.5rem;
     }
   }

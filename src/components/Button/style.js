@@ -7,6 +7,7 @@ export const ButtonWrapper = styled(Link)`
   font-size: 0.813rem;
   line-height: 16px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   border-radius: 5.625rem;
 
@@ -30,7 +31,21 @@ export const ButtonWrapper = styled(Link)`
     }
   }
 
+  &.endButton {
+    @media (max-width: 767.98px) {
+      align-self: auto;
+    }
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+    }
+  }
+
   @media (min-width: 768px) {
     font-size: 0.938rem;
+  }
+
+  @media (max-width: 991.98px) {
+    font-size: 0.813rem !important;
   }
 `

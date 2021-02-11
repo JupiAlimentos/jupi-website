@@ -4,10 +4,11 @@ import { Link } from 'gatsby'
 export const FooterWrapper = styled.footer`
   text-align: center;
   color: #fff;
-  background: linear-gradient(90deg, #420d0d 0%, #6b1515 50.74%, #420d0d 100%);
+  margin-top: 4.375rem;
 
   padding-top: 4.375rem;
   padding-bottom: 6.875rem;
+  background: linear-gradient(90deg, #420d0d 0%, #6b1515 50.74%, #420d0d 100%);
 
   div.container > div.row > div:nth-child(1) {
     position: relative;
@@ -26,16 +27,23 @@ export const FooterWrapper = styled.footer`
   @media (min-width: 576px) {
     padding-top: 5rem;
     padding-bottom: 7.5rem;
+    margin-top: 5rem;
   }
 
   @media (min-width: 768px) {
     padding-top: 5.25rem;
     padding-bottom: 7.75rem;
+    margin-top: 5.25rem;
   }
 
   @media (min-width: 992px) {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
+    margin-top: 6.25rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 8.25rem;
   }
 `
 

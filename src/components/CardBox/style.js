@@ -15,8 +15,18 @@ export const CardBoxWrapper = styled.article`
     padding-left: 1.875rem;
   }
 
-  @media (max-width: 991.98px) {
-    &:first-child {
+  @media (max-width: 767.98px) {
+    margin-bottom: 2.5rem;
+
+    [class^='col-']:last-child &,
+    [class*=' col-']:last-child & {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    [class^='col-']:first-child &,
+    [class*=' col-']:first-child & {
       margin-bottom: 2.5rem;
     }
   }

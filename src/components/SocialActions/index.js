@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import CardBox from '../CardBox'
+import Button from '../Button'
 
 const SocialActions = () => {
   const { actionImage01, actionImage02, actionImage03 } = useStaticQuery(
@@ -58,6 +59,15 @@ const SocialActions = () => {
           />
         </div>
       </div>
+      <p className='mt-40 d-flex flex-drct'>
+        <Button
+          slug='/acoes'
+          buttonClass='secondaryButton endButton'
+          buttonTitle='Veja todas as ações'
+        >
+          Veja todas as ações
+        </Button>
+      </p>
     </section>
   )
 }
