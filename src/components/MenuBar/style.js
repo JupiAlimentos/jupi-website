@@ -5,6 +5,9 @@ export const MenuInput = styled.input`
   display: none;
 
   @media (max-width: 991.98px) {
+    &:checked ~ a {
+      top: 40px;
+    }
     &:checked ~ label .menuBox {
       position: fixed;
       background-color: var(--header-color);
@@ -104,7 +107,7 @@ export const MenuHeader = styled.header`
   @media (max-width: 991.98px) {
     display: flex;
     justify-content: center;
-    height: 90px;
+    height: 75px;
   }
 `
 
@@ -113,8 +116,8 @@ export const MenuBrand = styled(Link)`
   display: block;
   top: 10px;
   left: 50%;
-  margin-left: -47.815px;
-  z-index: 999;
+  margin-left: calc(-47.815px / 2);
+  z-index: 4;
 
   img {
     display: block;
@@ -124,6 +127,13 @@ export const MenuBrand = styled(Link)`
 
   @media (max-width: 991.98px) {
     position: fixed;
+    top: 7.5px;
+    margin-left: calc(-81.97px / 2);
+
+    img {
+      width: 81.97px;
+      height: 60px;
+    }
   }
 `
 
@@ -136,7 +146,7 @@ export const MenuBackground = styled.div`
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255, 255, 255, 0.62);
     width: 100%;
-    height: 90px;
+    height: 75px;
     z-index: 0;
     opacity: 1;
     visibility: visible;
