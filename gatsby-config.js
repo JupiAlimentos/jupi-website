@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Jupi Alimentos`,
-    description: `Website of Jupi Alimentos.`,
-    author: `@laurielmesquita`
+    title: 'Jupi Alimentos',
+    description: 'Website of Jupi Alimentos.',
+    author: '@laurielmesquita'
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-webfonts`,
+      resolve: 'gatsby-plugin-webfonts',
       options: {
         fonts: {
           google: [
@@ -22,29 +22,29 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `jupi-alimentos`,
-        short_name: `jupi`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/icons/jupi-icon.png` // This path is relative to the root of the site.
+        name: 'jupi-alimentos',
+        short_name: 'jupi',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/icons/jupi-icon.png' // This path is relative to the root of the site.
       }
     },
-    `gatsby-plugin-offline`
+    'gatsby-plugin-offline'
   ]
 }
