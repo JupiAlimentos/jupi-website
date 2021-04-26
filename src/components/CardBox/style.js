@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 export const CardBoxWrapper = styled.article`
   display: flex;
@@ -32,7 +32,7 @@ export const CardBoxWrapper = styled.article`
   }
 `
 
-export const CardBoxImage = styled(Img)`
+export const CardBoxImage = styled(GatsbyImage)`
   border-radius: var(--bdr-20) var(--bdr-20) 0 0;
   background-color: var(--header-color);
 `

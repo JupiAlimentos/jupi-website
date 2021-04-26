@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Button from '../Button'
 
@@ -37,7 +37,10 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
             <HeroTitle>{heroTitle}</HeroTitle>
           </div>
           <HeroProducts className='col-12'>
-            <Img fluid={heroImage.childImageSharp.fluid} alt='Família Jupi' />
+            <GatsbyImage
+              fluid={heroImage.childImageSharp.gatsbyImageData}
+              alt='Família Jupi'
+            />
           </HeroProducts>
         </div>
         <Button

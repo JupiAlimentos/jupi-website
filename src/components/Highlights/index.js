@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Button from '../Button'
 
@@ -24,34 +24,26 @@ const Highlights = () => {
       query {
         productImage01: file(relativePath: { eq: "products/tapioca.png" }) {
           childImageSharp {
-            fluid(maxWidth: 576) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         productImage02: file(relativePath: { eq: "products/fava.png" }) {
           childImageSharp {
-            fluid(maxWidth: 576) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         productImage03: file(
           relativePath: { eq: "products/flocao-milho.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 576) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         productImage04: file(
           relativePath: { eq: "products/flocao-arroz.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 576) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
@@ -65,8 +57,8 @@ const Highlights = () => {
         <div className='col-12'>
           <Highlight>
             <HighlightTitle>Goma Para Tapioca</HighlightTitle>
-            <Img
-              fluid={productImage01.childImageSharp.fluid}
+            <GatsbyImage
+              fluid={productImage01.childImageSharp.gatsbyImageData}
               alt='Família Jupi'
             />
             <HighlightWrapperInfo>
@@ -89,8 +81,8 @@ const Highlights = () => {
         <div className='col-12'>
           <Highlight>
             <HighlightTitle>Fava</HighlightTitle>
-            <Img
-              fluid={productImage02.childImageSharp.fluid}
+            <GatsbyImage
+              fluid={productImage02.childImageSharp.gatsbyImageData}
               alt='Família Jupi'
             />
             <HighlightWrapperInfo>
@@ -113,8 +105,8 @@ const Highlights = () => {
         <div className='col-12'>
           <Highlight>
             <HighlightTitle>Flocão de Milho</HighlightTitle>
-            <Img
-              fluid={productImage03.childImageSharp.fluid}
+            <GatsbyImage
+              fluid={productImage03.childImageSharp.gatsbyImageData}
               alt='Família Jupi'
             />
             <HighlightWrapperInfo>
@@ -137,8 +129,8 @@ const Highlights = () => {
         <div className='col-12'>
           <Highlight>
             <HighlightTitle>Flocão de Arroz</HighlightTitle>
-            <Img
-              fluid={productImage04.childImageSharp.fluid}
+            <GatsbyImage
+              fluid={productImage04.childImageSharp.gatsbyImageData}
               alt='Família Jupi'
             />
             <HighlightWrapperInfo>

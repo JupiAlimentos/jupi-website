@@ -21,10 +21,11 @@ export const grid = css`
       max-width: 1140px;
     }
 
-    @media (min-width: 1400px) {
-      max-width: 1386px;
+    @media (min-width: 1440px) {
+      max-width: 1426px;
     }
   }
+
   .row {
     --gd-gutter-x: 2.5rem;
     --gd-gutter-y: 0;
