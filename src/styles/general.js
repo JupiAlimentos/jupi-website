@@ -2,10 +2,22 @@ import { css } from 'styled-components'
 
 export const general = css`
   // Headings
-  .sectionHeadings {
-    padding: 0 2.5rem;
+  .sectionHeadings,
+  .topSectionHeadings {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
     font-weight: bold;
     letter-spacing: -0.02em;
+  }
+
+  .topSectionHeadings {
+    padding-top: 5.625rem;
+
+    @media (max-width: 767.98px) {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      padding-top: 3.75rem;
+    }
   }
 
   .gradientDarkRed {

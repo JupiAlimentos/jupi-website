@@ -10,7 +10,7 @@ const Contact = () => (
     <Seo title='Contato' />
     <section className='container mt-40'>
       <section className='container'>
-        <h2 className='sectionHeadings pt-90'>Visite a Jupi Alimentos</h2>
+        <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
       </section>
       <Cover>
         <StaticImage
