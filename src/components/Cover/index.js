@@ -1,18 +1,9 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 
-const Cover = () => (
-  <>
-    <section className='container'>
-      <h2 className='sectionHeadings'>Ações Sociais</h2>
-    </section>
-    <StaticImage
-      src='../../images/cover-contact-jupi.jpg'
-      alt='Jupi'
-      placeholder='blurred'
-      layout='fixed'
-    />
-  </>
+import { CoverBoxImage } from './style'
+
+const Cover = ({ children }) => (
+  <CoverBoxImage className='mt-90'>{children}</CoverBoxImage>
 )
 
 export default Cover
