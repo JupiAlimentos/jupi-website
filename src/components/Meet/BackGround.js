@@ -46,6 +46,7 @@ const GbiBridged = ({ className }) => {
 
 const StyledBackgroundSection = styled(GbiBridged)`
   width: 100%;
+  background-color: transparent !important;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;

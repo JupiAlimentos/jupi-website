@@ -34,10 +34,6 @@ export const general = css`
     border-radius: var(--bdr-20);
     overflow: hidden;
 
-    &.GbiBridged {
-      background-color: transparent !important;
-    }
-
     &.dark {
       .titleBox,
       .infoBox {
