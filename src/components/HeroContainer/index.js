@@ -1,6 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Button from '../Button'
 
@@ -13,20 +12,6 @@ import {
 } from './style'
 
 const Hero = ({ srcMedia, heroTag, heroTitle }) => {
-  const { heroImage } = useStaticQuery(
-    graphql`
-      query {
-        heroImage: file(relativePath: { eq: "hero-products.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `
-  )
-
   return (
     <HeroWrapper>
       <HeroSource src={srcMedia} />
@@ -37,9 +22,11 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
             <HeroTitle>{heroTitle}</HeroTitle>
           </div>
           <HeroProducts className='col-12'>
-            <GatsbyImage
-              fluid={heroImage.childImageSharp.gatsbyImageData}
+            <StaticImage
+              src='../../images/hero-products.png'
               alt='Família Jupi'
+              placeholder='blurred'
+              layout='fullWidth'
             />
           </HeroProducts>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Button from '../Button'
-import StyledBackgroundSection from './StyledBG'
+import GbiBridged from './BackGround'
 
 import {
   AttendanceList,
@@ -22,7 +22,7 @@ const Meet = () => (
     <h2 className='sectionHeadings'>Jupi Alimentos</h2>
     <div className='row'>
       <div className='mb-sm-40 col-md-6 col-xl-8 d-flex'>
-        <StyledBackgroundSection className='baseBox dark pd-0' />
+        <GbiBridged className='baseBox GbiBridged dark pd-0' />
       </div>
       <aside className='col-md-6 col-xl-4 d-flex'>
         <div className='baseBox'>

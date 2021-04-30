@@ -3,15 +3,14 @@ import { Link } from 'gatsby'
 
 import {
   CardBoxWrapper,
-  CardBoxImage,
   CardBoxWrapperInfo,
   CardBoxTitle,
   CardBoxInfo
 } from './style'
 
-const CardBox = ({ imageCard, titleCard, infoCard }) => (
+const CardBox = ({ children, titleCard, infoCard }) => (
   <CardBoxWrapper>
-    <CardBoxImage fluid={imageCard} alt='Família Jupi' />
+    {children}
     <CardBoxWrapperInfo>
       <CardBoxTitle>{titleCard}</CardBoxTitle>
     </CardBoxWrapperInfo>

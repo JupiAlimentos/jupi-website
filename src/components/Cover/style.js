@@ -5,4 +5,8 @@ export const CoverBoxImage = styled.div`
   margin-top: 2.188rem;
   border-radius: var(--bdr-20);
   background-color: var(--header-color);
+
+  img {
+    border-radius: var(--bdr-20);
+  }
 `

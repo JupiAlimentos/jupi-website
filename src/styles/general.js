@@ -14,9 +14,9 @@ export const general = css`
     padding-top: 5.625rem;
 
     @media (max-width: 767.98px) {
+      padding-top: 3.75rem;
       padding-right: 0.5rem;
       padding-left: 0.5rem;
-      padding-top: 3.75rem;
     }
   }
 
@@ -33,6 +33,10 @@ export const general = css`
     background-color: #fff;
     border-radius: var(--bdr-20);
     overflow: hidden;
+
+    &.GbiBridged {
+      background-color: transparent !important;
+    }
 
     &.dark {
       .titleBox,
