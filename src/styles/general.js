@@ -2,10 +2,13 @@ import { css } from 'styled-components'
 
 export const general = css`
   // Headings
-  .sectionHeadings,
-  .topSectionHeadings {
+  .sidePdTxt {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+  }
+
+  .sectionHeadings,
+  .topSectionHeadings {
     font-weight: bold;
     letter-spacing: -0.02em;
   }
@@ -18,6 +21,12 @@ export const general = css`
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
+  }
+
+  .infoCover {
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 1.688rem;
   }
 
   .gradientDarkRed {

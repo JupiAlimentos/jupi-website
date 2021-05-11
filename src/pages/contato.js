@@ -10,7 +10,9 @@ const Contact = () => (
     <Seo title='Contato' />
     <section className='container mt-40'>
       <section className='container'>
-        <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
+        <h2 className='sidePdTxt topSectionHeadings'>
+          Visite a Jupi Alimentos
+        </h2>
       </section>
       <Cover>
         <StaticImage
@@ -20,6 +22,85 @@ const Contact = () => (
           layout='fullWidth'
         />
       </Cover>
+      <p className='sidePdTxt infoCover'>
+        Av. Prefeito Wall Ferraz, 13619 - Parque Jacinta, Teresina - PI,
+        64035-180
+      </p>
+    </section>
+    <section className='container'>
+      <h2 className='sidePdTxt topSectionHeadings'>
+        Fale com a Jupi Alimentos
+      </h2>
+      <div className='row'>
+        <div className='col-md-4'>
+          <h4>Departamento Número 1</h4>
+          <p>
+            Entre em contato com nosso departamento number 1 das 8h às 18h de
+            segunda a sexta.
+          </p>
+          <p>
+            <a href='tel:+558632220000' data-telegram='telegram'>
+              (86) 3222-0000
+            </a>
+          </p>
+          <p>
+            <a href='mailto:departamento01@jupi.com.br'>
+              departamento01@jupi.com.br
+            </a>
+          </p>
+        </div>
+        <div className='col-md-4'>
+          <h4>Departamento Número 2</h4>
+          <p>
+            Entre em contato com nosso departamento number 2 das 8h às 18h de
+            segunda a sexta.
+          </p>
+          <p>
+            <a href='tel:+558632220000' data-telegram='telegram'>
+              (86) 3222-0000
+            </a>
+          </p>
+          <p>
+            <a href='mailto:departamento01@jupi.com.br'>
+              departamento01@jupi.com.br
+            </a>
+          </p>
+        </div>
+        <div className='col-md-4'>
+          <h4>Departamento Número 3</h4>
+          <p>
+            Entre em contato com nosso departamento number 3 das 8h às 18h de
+            segunda a sexta.
+          </p>
+          <p>
+            <a href='tel:+558632220000' data-telegram='telegram'>
+              (86) 3222-0000
+            </a>
+          </p>
+          <p>
+            <a href='mailto:departamento01@jupi.com.br'>
+              departamento01@jupi.com.br
+            </a>
+          </p>
+        </div>
+        <div className='col-md-4'>
+          <h4>Departamento Número 4</h4>
+          <p>
+            Entre em contato com nosso departamento number 4 das 8h às 18h de
+            segunda a sexta.
+          </p>
+          <p>
+            <a href='tel:+558632220000' data-telegram='telegram'>
+              (86) 3222-0000
+            </a>
+          </p>
+          <p>
+            <a href='mailto:departamento01@jupi.com.br'>
+              departamento01@jupi.com.br
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
   </Layout>
 )

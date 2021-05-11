@@ -19,7 +19,7 @@ import partiner05 from '../../images/partners/partner-5.jpg'
 
 const Meet = () => (
   <section className='container bottomSpacer'>
-    <h2 className='sectionHeadings'>Jupi Alimentos</h2>
+    <h2 className='sidePdTxt sectionHeadings'>Jupi Alimentos</h2>
     <div className='row'>
       <div className='mb-sm-40 col-md-6 col-xl-8 d-flex'>
         <GbiBridged className='baseBox dark pd-0' />
