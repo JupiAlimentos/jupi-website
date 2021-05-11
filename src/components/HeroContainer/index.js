@@ -16,7 +16,7 @@ const Hero = ({ srcMedia, heroTag, heroTitle }) => {
     <HeroWrapper>
       <HeroSource src={srcMedia} />
       <div className='container'>
-        <div className='row'>
+        <div className='row justify-content-center'>
           <div className='col-11 col-lg-10 pd-0'>
             <HeroTag>{heroTag}</HeroTag>
             <HeroTitle>{heroTitle}</HeroTitle>

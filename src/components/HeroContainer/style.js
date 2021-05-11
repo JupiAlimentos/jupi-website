@@ -51,6 +51,8 @@ export const HeroTag = styled.span`
 `
 
 export const HeroTitle = styled.h1`
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 0;
   font-size: 1.36rem;
   text-align: center;

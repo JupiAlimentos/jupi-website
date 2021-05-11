@@ -43,8 +43,6 @@ export const grid = css`
       padding-right: calc(var(--gd-gutter-x) / 2);
       padding-left: calc(var(--gd-gutter-x) / 2);
       margin-top: var(--gd-gutter-y);
-      margin-right: auto;
-      margin-left: auto;
     }
   }
 

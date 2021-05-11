@@ -18,7 +18,7 @@ import Brand from '../../images/jupi-brand.svg'
 const Footer = () => (
   <FooterWrapper>
     <div className='container'>
-      <div className='row'>
+      <div className='row justify-content-center'>
         <div className='col-11 col-xxl-8'>
           <MenuLeft>
             <MenuList>
