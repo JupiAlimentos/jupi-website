@@ -29,85 +29,104 @@ const Contact = () => (
     </section>
     <section className='container'>
       <h2 className='sidePdTxt topSectionHeadings mb-0'>
-        Fale com a Jupi Alimentos
+        Fale com a Jupi Alimentos <br />
+        <a href='tel:+558621061710' data-telegram='telegram'>
+          (86) 2106-1710
+        </a>
       </h2>
       <div className='row innerContainer row-cols-md-2 row-cols-lg-3 g-3'>
         <div className='col'>
           <div className='generalBox'>
-            <h4>Departamento Número 1</h4>
+            <h4>Departamento Administrativo</h4>
             <p>
-              Entre em contato com nosso departamento number 1 das 8h às 18h de
-              segunda a sexta.
+              Entre em contato com nosso departamento administrativo das 8h às
+              18h de segunda a sexta.
             </p>
             <br />
+            <p>Ramal: 1716</p>
             <p>
-              <a href='tel:+558632220000' data-telegram='telegram'>
-                (86) 3222-0000
-              </a>
-            </p>
-            <p>
-              <a href='mailto:departamento01@jupi.com.br'>
-                departamento01@jupi.com.br
+              <a href='mailto:gerencia@jupialimentos.com.br'>
+                gerencia@jupialimentos.com.br
               </a>
             </p>
           </div>
         </div>
         <div className='col'>
           <div className='generalBox'>
-            <h4>Departamento Número 2</h4>
+            <h4>Departamento Comercial</h4>
             <p>
-              Entre em contato com nosso departamento number 2 das 8h às 18h de
+              Entre em contato com nosso departamento comercial das 8h às 18h de
               segunda a sexta.
             </p>
             <br />
+            <p>Ramal: 1712</p>
             <p>
-              <a href='tel:+558632220000' data-telegram='telegram'>
-                (86) 3222-0000
-              </a>
-            </p>
-            <p>
-              <a href='mailto:departamento01@jupi.com.br'>
-                departamento01@jupi.com.br
+              <a href='mailto:vendas@jupialimentos.com.br'>
+                vendas@jupialimentos.com.br
               </a>
             </p>
           </div>
         </div>
         <div className='col'>
           <div className='generalBox'>
-            <h4>Departamento Número 3</h4>
+            <h4>Departamento de Logística</h4>
             <p>
-              Entre em contato com nosso departamento number 3 das 8h às 18h de
-              segunda a sexta.
+              Entre em contato com nosso departamento de logística das 8h às 18h
+              de segunda a sexta.
             </p>
             <br />
+            <p>Ramal: 1727</p>
             <p>
-              <a href='tel:+558632220000' data-telegram='telegram'>
-                (86) 3222-0000
-              </a>
-            </p>
-            <p>
-              <a href='mailto:departamento01@jupi.com.br'>
-                departamento01@jupi.com.br
+              <a href='mailto:logistica@jupialimentos.com.br'>
+                logistica@jupialimentos.com.br
               </a>
             </p>
           </div>
         </div>
         <div className='col'>
           <div className='generalBox'>
-            <h4>Departamento Número 4</h4>
+            <h4>Departamento Financeiro</h4>
             <p>
-              Entre em contato com nosso departamento number 4 das 8h às 18h de
-              segunda a sexta.
+              Entre em contato com nosso departamento financeiro das 8h às 18h
+              de segunda a sexta.
             </p>
             <br />
+            <p>Ramal: 1721</p>
             <p>
-              <a href='tel:+558632220000' data-telegram='telegram'>
-                (86) 3222-0000
+              <a href='mailto:financeiro@jupialimentos.com.br'>
+                financeiro@jupialimentos.com.br
               </a>
             </p>
+          </div>
+        </div>
+        <div className='col'>
+          <div className='generalBox'>
+            <h4>Departamento de Compras</h4>
             <p>
-              <a href='mailto:departamento01@jupi.com.br'>
-                departamento01@jupi.com.br
+              Entre em contato com nosso departamento de compras das 8h às 18h
+              de segunda a sexta.
+            </p>
+            <br />
+            <p>Ramal: 1715</p>
+            <p>
+              <a href='mailto:compras@jupialimentos.com.br'>
+                compras@jupialimentos.com.br
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className='col'>
+          <div className='generalBox'>
+            <h4>Departamento de Qualidade</h4>
+            <p>
+              Entre em contato com nosso departamento de qualidade das 8h às 18h
+              de segunda a sexta.
+            </p>
+            <br />
+            <p>Ramal: 1724</p>
+            <p>
+              <a href='mailto:qualidade@jupialimentos.com.br'>
+                qualidade@jupialimentos.com.br
               </a>
             </p>
           </div>

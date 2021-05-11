@@ -24,6 +24,15 @@ export const general = css`
   .topSectionHeadings {
     padding-top: 5.625rem;
 
+    a {
+      font-size: calc(1rem + 0.7709vw);
+      color: var(--highlight);
+
+      &:hover {
+        color: var(--header-color);
+      }
+    }
+
     @media (max-width: 767.98px) {
       padding-top: 3.75rem;
       padding-right: 0;
