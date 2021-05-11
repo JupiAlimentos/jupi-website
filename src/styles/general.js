@@ -58,10 +58,10 @@ export const general = css`
       line-height: 27px;
 
       a {
-        color: var(--header-color);
+        color: var(--highlight);
 
         &:hover {
-          color: var(--highlight);
+          color: var(--header-color);
         }
       }
     }
