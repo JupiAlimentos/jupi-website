@@ -46,6 +46,66 @@ export const grid = css`
     }
   }
 
+  .g-0,
+  .gx-0 {
+    --gd-gutter-x: 0;
+  }
+
+  .g-0,
+  .gy-0 {
+    --gd-gutter-y: 0;
+  }
+
+  .g-1,
+  .gx-1 {
+    --gd-gutter-x: 1rem;
+  }
+
+  .g-1,
+  .gy-1 {
+    --gd-gutter-y: 1rem;
+  }
+
+  .g-2,
+  .gx-2 {
+    --gd-gutter-x: 1.5rem;
+  }
+
+  .g-2,
+  .gy-2 {
+    --gd-gutter-y: 1.5rem;
+  }
+
+  .g-3,
+  .gx-3 {
+    --gd-gutter-x: 2rem;
+  }
+
+  .g-3,
+  .gy-3 {
+    --gd-gutter-y: 2rem;
+  }
+
+  .g-4,
+  .gx-4 {
+    --gd-gutter-x: 2.5rem;
+  }
+
+  .g-4,
+  .gy-4 {
+    --gd-gutter-y: 2.5rem;
+  }
+
+  .g-5,
+  .gx-5 {
+    --gd-gutter-x: 3rem;
+  }
+
+  .g-5,
+  .gy-5 {
+    --gd-gutter-y: 3rem;
+  }
+
   .col {
     flex: 1 0 0%;
   }

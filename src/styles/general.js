@@ -2,9 +2,17 @@ import { css } from 'styled-components'
 
 export const general = css`
   // Headings
+  .innerContainer,
   .sidePdTxt {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+  }
+
+  .innerContainer {
+    @media (max-width: 767.98px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   .sectionHeadings,
@@ -34,7 +42,31 @@ export const general = css`
     background: linear-gradient(90deg, #420d0d 0%, #6b1515 100%);
   }
 
-  // Base Box
+  // Box
+  .generalBox {
+    padding: 2.5rem 0 0;
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.438rem;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+
+      a {
+        color: var(--header-color);
+
+        &:hover {
+          color: var(--highlight);
+        }
+      }
+    }
+  }
+
   .baseBox {
     display: flex;
     flex-direction: column;
