@@ -26,8 +26,8 @@ export const general = css`
 
     @media (max-width: 767.98px) {
       padding-top: 3.75rem;
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -35,6 +35,12 @@ export const general = css`
     margin-top: 1.875rem;
     font-size: 1.5rem;
     line-height: 1.688rem;
+
+    @media (max-width: 575.98px) {
+      font-size: 1.3rem;
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   .gradientDarkRed {
