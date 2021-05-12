@@ -19,9 +19,9 @@ const Highlights = () => {
       <HighlightsWrapper className='row'>
         <div className='col-12'>
           <Highlight>
-            <HighlightTitle>Goma Para Tapioca</HighlightTitle>
+            <HighlightTitle>Flocão de Milho</HighlightTitle>
             <StaticImage
-              src='../../images/products/tapioca.png'
+              src='../../images/products/flocao-milho.png'
               alt='Família Jupi'
               placeholder='blurred'
               layout='fullWidth'
@@ -45,9 +45,9 @@ const Highlights = () => {
         </div>
         <div className='col-12'>
           <Highlight>
-            <HighlightTitle>Fava</HighlightTitle>
+            <HighlightTitle>Feijão Carioca</HighlightTitle>
             <StaticImage
-              src='../../images/products/fava.png'
+              src='../../images/products/feijao-carioca.png'
               alt='Família Jupi'
               placeholder='blurred'
               layout='fullWidth'
@@ -71,9 +71,9 @@ const Highlights = () => {
         </div>
         <div className='col-12'>
           <Highlight>
-            <HighlightTitle>Flocão de Milho</HighlightTitle>
+            <HighlightTitle>Goma de Mandioca</HighlightTitle>
             <StaticImage
-              src='../../images/products/flocao-milho.png'
+              src='../../images/products/goma-mandioca.png'
               alt='Família Jupi'
               placeholder='blurred'
               layout='fullWidth'
@@ -97,9 +97,9 @@ const Highlights = () => {
         </div>
         <div className='col-12'>
           <Highlight>
-            <HighlightTitle>Flocão de Arroz</HighlightTitle>
+            <HighlightTitle>Canjica Amarela</HighlightTitle>
             <StaticImage
-              src='../../images/products/flocao-arroz.png'
+              src='../../images/products/canjica-amarela.png'
               alt='Família Jupi'
               placeholder='blurred'
               layout='fullWidth'
