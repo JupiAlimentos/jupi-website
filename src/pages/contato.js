@@ -131,6 +131,22 @@ const Contact = () => (
             </p>
           </div>
         </div>
+        <div className='col'>
+          <div className='generalBox'>
+            <h4>Departamento de RH</h4>
+            <p>
+              Entre em contato com nosso departamento de RH das 8h às 18h de
+              segunda a sexta.
+            </p>
+            <br />
+            <p>Ramal: 1725</p>
+            <p>
+              <a href='mailto:qualidade@jupialimentos.com.br'>
+                rh@jupialimentos.com.br
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </Layout>
