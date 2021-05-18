@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import Cover from '../components/Cover'
+import ContactInfo from '../components/ContactInfo'
 
 const Contact = () => (
   <Layout>
@@ -34,120 +35,7 @@ const Contact = () => (
           (86) 2106-1710
         </a>
       </h2>
-      <div className='row innerContainer row-cols-md-2 row-cols-lg-3 g-3'>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento Administrativo</h4>
-            <p>
-              Entre em contato com nosso departamento administrativo das 8h às
-              18h de segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1716</p>
-            <p>
-              <a href='mailto:gerencia@jupialimentos.com.br'>
-                gerencia@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento Comercial</h4>
-            <p>
-              Entre em contato com nosso departamento comercial das 8h às 18h de
-              segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1712</p>
-            <p>
-              <a href='mailto:vendas@jupialimentos.com.br'>
-                vendas@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento de Logística</h4>
-            <p>
-              Entre em contato com nosso departamento de logística das 8h às 18h
-              de segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1727</p>
-            <p>
-              <a href='mailto:logistica@jupialimentos.com.br'>
-                logistica@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento Financeiro</h4>
-            <p>
-              Entre em contato com nosso departamento financeiro das 8h às 18h
-              de segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1721</p>
-            <p>
-              <a href='mailto:financeiro@jupialimentos.com.br'>
-                financeiro@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento de Compras</h4>
-            <p>
-              Entre em contato com nosso departamento de compras das 8h às 18h
-              de segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1715</p>
-            <p>
-              <a href='mailto:compras@jupialimentos.com.br'>
-                compras@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento de Qualidade</h4>
-            <p>
-              Entre em contato com nosso departamento de qualidade das 8h às 18h
-              de segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1724</p>
-            <p>
-              <a href='mailto:qualidade@jupialimentos.com.br'>
-                qualidade@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className='col'>
-          <div className='generalBox'>
-            <h4>Departamento de RH</h4>
-            <p>
-              Entre em contato com nosso departamento de RH das 8h às 18h de
-              segunda a sexta.
-            </p>
-            <br />
-            <p>Ramal: 1725</p>
-            <p>
-              <a href='mailto:qualidade@jupialimentos.com.br'>
-                rh@jupialimentos.com.br
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <ContactInfo />
     </section>
   </Layout>
 )
