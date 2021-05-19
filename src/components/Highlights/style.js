@@ -21,7 +21,6 @@ export const HighlightsSpacer = styled.section`
 `
 
 export const HighlightsWrapper = styled.div`
-  flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 1.375rem;

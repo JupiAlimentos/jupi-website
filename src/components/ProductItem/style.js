@@ -6,7 +6,19 @@ export const ProductItemWrapper = styled.div`
   background-color: #fff;
   border-radius: var(--bdr-20);
   text-align: center;
-  padding: 5rem;
+  margin-bottom: 40px;
+
+  @media (min-width: 576px) {
+    padding: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 3.75rem;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 5rem;
+  }
 `
 
 export const ProductItemImage = styled.div`

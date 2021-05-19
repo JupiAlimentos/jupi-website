@@ -10,7 +10,7 @@ const Products = () => (
     <Seo title='Produtos' />
     <main className='container'>
       <h2 className='sidePdTxt topSectionHeadings'>Família Jupi</h2>
-      <div className='row'>
+      <div className='row flex-wrap'>
         <ProductItem
           title='Flocão de Milho e Arroz'
           description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
@@ -23,6 +23,7 @@ const Products = () => (
             layout='constrained'
           />
         </ProductItem>
+
         <ProductItem
           title='Tapioca e Goma de Mandioca'
           description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
@@ -30,6 +31,32 @@ const Products = () => (
         >
           <StaticImage
             src='../images/products/tapioca-goma-mandioca.png'
+            alt='Tapioca e Goma de Mandioca'
+            placeholder='blurred'
+            layout='constrained'
+          />
+        </ProductItem>
+
+        <ProductItem
+          title='Nossas Canjicas'
+          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          slug='/'
+        >
+          <StaticImage
+            src='../images/products/nossas-conjicas.png'
+            alt='Tapioca e Goma de Mandioca'
+            placeholder='blurred'
+            layout='constrained'
+          />
+        </ProductItem>
+
+        <ProductItem
+          title='Fécula de Mandioca'
+          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          slug='/'
+        >
+          <StaticImage
+            src='../images/products/fecula-mandioca.png'
             alt='Tapioca e Goma de Mandioca'
             placeholder='blurred'
             layout='constrained'

@@ -334,6 +334,10 @@ export const helpers = css`
     margin: auto !important;
   }
 
+  .mt-auto {
+    margin-top: auto !important;
+  }
+
   .mx-auto {
     margin-right: auto !important;
     margin-left: auto !important;

@@ -9,14 +9,14 @@ import {
 } from './style'
 
 const ProductItem = ({ children, title, description, slug }) => (
-  <div className='col-6'>
+  <div className='col-6 d-flex'>
     <ProductItemWrapper>
       <ProductItemTitle>{title}</ProductItemTitle>
       <ProductItemImage>{children}</ProductItemImage>
       <ProductItemDescription>{description}</ProductItemDescription>
       <Button
         slug={slug}
-        buttonClass='primaryButton'
+        buttonClass='primaryButton mt-auto'
         buttonTitle='Conheça o flocão de milho e arroz'
       >
         SAIBA MAIS
