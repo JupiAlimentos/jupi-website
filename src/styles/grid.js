@@ -46,6 +46,10 @@ export const grid = css`
     }
   }
 
+  .d-sm-flex {
+    display: flex !important;
+  }
+
   .g-0,
   .gx-0 {
     --gd-gutter-x: 0;

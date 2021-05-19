@@ -10,6 +10,7 @@ export const ButtonWrapper = styled(Link)`
   text-align: center;
   text-transform: uppercase;
   border-radius: 5.625rem;
+  align-self: center;
 
   &.primaryButton {
     color: hsla(220, 5%, 10%, 0.84);

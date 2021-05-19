@@ -333,6 +333,15 @@ export const helpers = css`
   .m-auto {
     margin: auto !important;
   }
+
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .gap-2 {
+    gap: 0.5rem !important;
+  }
 `
 
 export default helpers

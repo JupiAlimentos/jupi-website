@@ -21,18 +21,11 @@ export const HighlightsSpacer = styled.section`
 `
 
 export const HighlightsWrapper = styled.div`
-  display: flex;
   flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 1.375rem;
   margin-bottom: 6rem;
-
-  & > [class^='col-'],
-  & > [class*=' col-'] {
-    display: flex;
-    width: 100%;
-  }
 
   @media (min-width: 768px) {
     padding-bottom: 2rem;
