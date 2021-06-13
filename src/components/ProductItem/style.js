@@ -7,6 +7,7 @@ export const ProductItemWrapper = styled.div`
   border-radius: var(--bdr-20);
   text-align: center;
   margin-bottom: 40px;
+  padding: 3rem 2rem;
 
   @media (min-width: 576px) {
     padding: 3rem;
