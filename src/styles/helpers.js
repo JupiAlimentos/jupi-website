@@ -5,10 +5,6 @@ export const helpers = css`
     text-align: center;
   }
 
-  .d-flex {
-    display: flex;
-  }
-
   .flex-drct {
     flex-direction: column;
   }
@@ -124,6 +120,12 @@ export const helpers = css`
 
   .d-flex {
     display: flex !important;
+  }
+
+  .d-lg-flex {
+    @media (min-width: 992px) {
+      display: inline-flex !important;
+    }
   }
 
   .d-inline-flex {

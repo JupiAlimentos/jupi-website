@@ -58,4 +58,8 @@ export const ProductItemWideDescription = styled.p`
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.688rem;
+
+  @media (max-width: 991.98px) {
+    display: none;
+  }
 `

@@ -28,6 +28,10 @@ export const ProductItemImage = styled.div`
     max-width: 100%;
     background-color: transparent;
   }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 2.5rem;
+  }
 `
 
 export const ProductItemTitle = styled.h2`
@@ -41,4 +45,8 @@ export const ProductItemDescription = styled.p`
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.688rem;
+
+  @media (max-width: 991.98px) {
+    display: none;
+  }
 `

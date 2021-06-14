@@ -9,7 +9,7 @@ import {
 } from './style'
 
 const ProductItem = ({ children, title, description, slug }) => (
-  <div className='col-lg-6 d-flex'>
+  <div className='col-lg-6 d-lg-flex'>
     <ProductItemWrapper>
       <ProductItemTitle>{title}</ProductItemTitle>
       <ProductItemImage>{children}</ProductItemImage>
