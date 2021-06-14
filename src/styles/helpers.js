@@ -346,6 +346,12 @@ export const helpers = css`
   .gap-2 {
     gap: 0.5rem !important;
   }
+
+  @media (min-width: 992px) {
+    .offset-lg-1 {
+      margin-left: 8.3333333333%;
+    }
+  }
 `
 
 export default helpers

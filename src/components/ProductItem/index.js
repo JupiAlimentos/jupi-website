@@ -17,7 +17,7 @@ const ProductItem = ({ children, title, description, slug }) => (
       <Button
         slug={slug}
         buttonClass='primaryButton mt-auto'
-        buttonTitle='Conheça o flocão de milho e arroz'
+        buttonTitle={title}
       >
         SAIBA MAIS
       </Button>
