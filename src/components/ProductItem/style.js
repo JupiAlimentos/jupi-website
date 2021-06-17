@@ -36,7 +36,8 @@ export const ProductItemImage = styled.div`
 
 export const ProductItemTitle = styled.h2`
   font-weight: 600;
-  font-size: 1.875rem;
+  font-size: calc(1.425rem + 0.3vw);
+  margin-bottom: 2.5rem;
 `
 
 export const ProductItemDescription = styled.p`

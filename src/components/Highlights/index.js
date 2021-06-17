@@ -15,7 +15,7 @@ import {
 const Highlights = () => {
   return (
     <HighlightsSpacer className='container'>
-      <h2 className='sidePdTxt sectionHeadings'>Destaques</h2>
+      <h2 className='sectionHeadings'>Destaques</h2>
       <HighlightsWrapper className='row'>
         <div className='col-12'>
           <Highlight>

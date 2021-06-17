@@ -37,7 +37,7 @@ export const ProductItemWideWrapper = styled.div`
 `
 
 export const ProductItemWideImage = styled.div`
-  max-height: 360px;
+  max-height: 180px;
   overflow: hidden;
 
   .gatsby-image-wrapper {
@@ -45,12 +45,16 @@ export const ProductItemWideImage = styled.div`
     width: 100%;
     background-color: transparent;
   }
+
+  @media (min-width: 768px) {
+    max-height: 360px;
+  }
 `
 
 export const ProductItemWideTitle = styled.h2`
   font-weight: 600;
-  font-size: 1.875rem;
-  margin-bottom: 2.5rem;
+  font-size: calc(1.425rem + 0.3vw);
+  margin-bottom: 1.5rem;
 `
 
 export const ProductItemWideDescription = styled.p`

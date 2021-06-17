@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.425rem;
     font-family: var(--header-font), sans-serif;
     font-weight: 900;
     line-height: 1.2;
@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: calc(1.375rem + 1.5vw);
   }
   h2 {
-    font-size: calc(1.325rem + .7709vw);
+    font-size: calc(1.425rem + .7709vw);
   }
   h3 {
     font-size: calc(1.3rem + .6vw);

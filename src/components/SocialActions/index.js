@@ -8,7 +8,7 @@ import Button from '../Button'
 const SocialActions = () => {
   return (
     <section className='container'>
-      <h2 className='sidePdTxt sectionHeadings'>Ações Sociais</h2>
+      <h2 className='sectionHeadings'>Ações Sociais</h2>
       <div className='row'>
         <div className='col-md-12 col-lg-4 d-flex'>
           <CardBox

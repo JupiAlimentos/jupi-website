@@ -11,9 +11,7 @@ const Contact = () => (
     <Seo title='Contato' />
     <section className='container mt-40'>
       <section className='container'>
-        <h2 className='sidePdTxt topSectionHeadings'>
-          Visite a Jupi Alimentos
-        </h2>
+        <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
       </section>
       <Cover>
         <StaticImage
@@ -23,13 +21,13 @@ const Contact = () => (
           layout='fullWidth'
         />
       </Cover>
-      <p className='sidePdTxt infoCover'>
+      <p className='infoCover'>
         Av. Prefeito Wall Ferraz, 13619 - Parque Jacinta, Teresina - PI,
         64035-180
       </p>
     </section>
     <section className='container'>
-      <h2 className='sidePdTxt topSectionHeadings mb-0'>
+      <h2 className='topSectionHeadings mb-0'>
         Fale com a Jupi Alimentos <br />
         <a href='tel:+558621061710' data-telegram='telegram'>
           (86) 2106-1710

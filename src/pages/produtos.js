@@ -10,7 +10,7 @@ const Products = () => (
   <Layout>
     <Seo title='Produtos' />
     <main className='container'>
-      <h2 className='sidePdTxt topSectionHeadings'>Família Jupi</h2>
+      <h2 className='topSectionHeadings'>Família Jupi</h2>
       <div className='row flex-wrap'>
         {/* Line 01 */}
         <ProductItemWide

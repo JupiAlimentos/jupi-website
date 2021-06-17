@@ -2,11 +2,6 @@ import { css } from 'styled-components'
 
 export const general = css`
   // Headings
-  .innerContainer,
-  .sidePdTxt {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
 
   .innerContainer {
     @media (max-width: 767.98px) {
@@ -22,7 +17,7 @@ export const general = css`
   }
 
   .topSectionHeadings {
-    padding-top: 5.625rem;
+    padding-top: 3.75rem;
 
     a {
       font-size: calc(1rem + 0.7709vw);
@@ -31,12 +26,6 @@ export const general = css`
       &:hover {
         color: var(--header-color);
       }
-    }
-
-    @media (max-width: 767.98px) {
-      padding-top: 3.75rem;
-      padding-right: 0;
-      padding-left: 0;
     }
   }
 
