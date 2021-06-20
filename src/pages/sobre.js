@@ -42,7 +42,7 @@ const About = () => (
             <h1>Nossa cultura</h1>
             <p className='highlightBody'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore
+              nonumy eirmod tempor invidunt ut labore et dolore.
             </p>
             <hr className='divider' />
             <div className='row'>

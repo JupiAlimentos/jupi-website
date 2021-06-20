@@ -48,7 +48,7 @@ export const general = css`
 
   // Box
   .contextBox {
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 
     h4 {
       margin-bottom: 1.2rem;
