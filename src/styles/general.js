@@ -53,7 +53,7 @@ export const general = css`
     h4 {
       font-weight: 600;
       font-size: 1.438rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
@@ -197,6 +197,12 @@ export const general = css`
         opacity: 1;
       }
     }
+  }
+
+  .mainTitle {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--header-color);
   }
 `
 

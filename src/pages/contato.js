@@ -10,9 +10,9 @@ const Contact = () => (
   <Layout>
     <Seo title='Contato' />
     <section className='container mt-40'>
-      <section className='container'>
+      <header className='container'>
         <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
-      </section>
+      </header>
       <Cover>
         <StaticImage
           src='../images/cover-contact-jupi.jpg'

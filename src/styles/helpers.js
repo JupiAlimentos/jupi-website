@@ -33,6 +33,18 @@ export const helpers = css`
     margin-top: 2.5rem;
   }
 
+  .mt-main {
+    margin-top: 7rem;
+
+    @media (min-width: 576px) {
+      margin-top: 8.625rem;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 10.625rem;
+    }
+  }
+
   .mb-sm-40 {
     @media (max-width: 767.98px) {
       margin-bottom: 2.5rem;
@@ -46,27 +58,17 @@ export const helpers = css`
   }
 
   .verticalSpacer {
-    padding-top: 4.375rem;
-    padding-bottom: 4.375rem;
-
-    @media (min-width: 576px) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
+    padding-top: 2.5rem;
+    padding-bottom: 8.75rem;
 
     @media (min-width: 768px) {
-      padding-top: 5.25rem;
-      padding-bottom: 5.25rem;
+      padding-top: 4.625rem;
+      padding-bottom: 8.75rem;
     }
 
     @media (min-width: 992px) {
-      padding-top: 6.25rem;
-      padding-bottom: 6.25rem;
-    }
-
-    @media (min-width: 1200px) {
-      padding-top: 8.25rem;
-      padding-bottom: 8.25rem;
+      padding-top: 5.625rem;
+      padding-bottom: 8.75rem;
     }
   }
 
@@ -347,6 +349,12 @@ export const helpers = css`
 
   .gap-2 {
     gap: 0.5rem !important;
+  }
+
+  @media (min-width: 768px) {
+    .offset-md-1 {
+      margin-left: 8.3333333333%;
+    }
   }
 
   @media (min-width: 992px) {
