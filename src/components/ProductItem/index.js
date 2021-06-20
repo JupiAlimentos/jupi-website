@@ -10,7 +10,7 @@ import {
 
 const ProductItem = ({ children, title, description, slug }) => (
   <div className='col-lg-6 d-lg-flex'>
-    <ProductItemWrapper>
+    <ProductItemWrapper className='wrapperBoxWhite'>
       <ProductItemTitle>{title}</ProductItemTitle>
       <ProductItemImage>{children}</ProductItemImage>
       <ProductItemDescription>{description}</ProductItemDescription>

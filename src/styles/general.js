@@ -47,6 +47,18 @@ export const general = css`
   }
 
   // Box
+  .contextBox {
+    font-size: 1.25rem;
+
+    h4 {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   .generalBox {
     padding: 2.5rem 0 0;
 
@@ -127,6 +139,24 @@ export const general = css`
     }
   }
 
+  .wrapperBoxWhite {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: var(--bdr-20);
+
+    @media (min-width: 576px) {
+      padding: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 3.75rem;
+    }
+
+    @media (min-width: 1400px) {
+      padding: 5rem;
+    }
+  }
+
   // Link text
   .linkText {
     display: flex;
@@ -203,6 +233,16 @@ export const general = css`
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--header-color);
+  }
+
+  .highlightBody {
+    font-size: 1.375rem;
+  }
+
+  .divider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #e3e4e6;
   }
 `
 
