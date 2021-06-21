@@ -18,9 +18,9 @@ const About = () => (
         />
       </Cover>
     </section>
-    <div className='container verticalSpacer txt-center'>
+    <div className='container verticalSpacer'>
       <div className='row'>
-        <div className='col-12 col-lg-10 offset-lg-1'>
+        <div className='col-12 col-lg-10 offset-lg-1 verticalTxtSpacer'>
           <h1 className='mainTitle'>Conheça a nossa história</h1>
           <p className='highlightBody'>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

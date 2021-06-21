@@ -4,17 +4,15 @@ export const ProductItemWideWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: var(--bdr-20);
   margin-bottom: 40px;
+  padding: 3rem 2rem;
   padding-bottom: 0 !important;
   text-align: center;
-
-  @media (max-width: 575.98px) {
-    padding: 3rem 2rem;
-  }
+  border-radius: var(--bdr-12);
 
   @media (min-width: 576px) {
     padding: 3rem;
+    border-radius: var(--bdr-16);
   }
 
   @media (max-width: 991.98px) {
@@ -25,6 +23,7 @@ export const ProductItemWideWrapper = styled.div`
 
   @media (min-width: 992px) {
     text-align: left;
+    border-radius: var(--bdr-20);
   }
 
   @media (min-width: 1200px) {

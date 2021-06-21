@@ -83,7 +83,7 @@ export const Highlight = styled.div`
   flex-direction: column;
   padding: 2.75rem 1.625rem;
   text-align: center;
-  border-radius: var(--bdr-20);
+  border-radius: var(--bdr-12);
   background-color: #fff;
 
   & > [class^='ButtonWrapper'],
@@ -114,6 +114,11 @@ export const Highlight = styled.div`
 
   @media (min-width: 576px) {
     padding: 2.75rem 2rem;
+    border-radius: var(--bdr-16);
+  }
+
+  @media (min-width: 992px) {
+    border-radius: var(--bdr-20);
   }
 
   @media (min-width: 1200px) {

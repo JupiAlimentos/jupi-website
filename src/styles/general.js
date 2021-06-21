@@ -48,8 +48,6 @@ export const general = css`
 
   // Box
   .contextBox {
-    /* font-size: 1.25rem; */
-
     h4 {
       margin-bottom: 1.2rem;
     }
@@ -88,7 +86,7 @@ export const general = css`
     flex-direction: column;
     width: 100%;
     background-color: #fff;
-    border-radius: var(--bdr-20);
+    border-radius: var(--bdr-12);
     overflow: hidden;
 
     &.dark {
@@ -105,6 +103,14 @@ export const general = css`
         margin-bottom: 1rem;
         opacity: 0.73;
       }
+    }
+
+    @media (min-width: 576px) {
+      border-radius: var(--bdr-16);
+    }
+
+    @media (min-width: 992px) {
+      border-radius: var(--bdr-20);
     }
 
     @media (max-width: 1199.98px) {
@@ -142,10 +148,28 @@ export const general = css`
   .wrapperBoxWhite {
     background-color: #fff;
     padding: 3rem 2rem;
-    border-radius: var(--bdr-20);
+
+    border-radius: var(--bdr-12);
+
+    img {
+      border-radius: var(--bdr-12);
+    }
 
     @media (min-width: 576px) {
       padding: 3rem;
+      border-radius: var(--bdr-16);
+
+      img {
+        border-radius: var(--bdr-16);
+      }
+    }
+
+    @media (min-width: 992px) {
+      border-radius: var(--bdr-20);
+
+      img {
+        border-radius: var(--bdr-20);
+      }
     }
 
     @media (min-width: 1200px) {
@@ -243,6 +267,30 @@ export const general = css`
     margin-top: 40px;
     margin-bottom: 40px;
     border: 1px solid #e3e4e6;
+  }
+
+  .bigRoundedCorner {
+    border-radius: var(--bdr-12);
+
+    img {
+      border-radius: var(--bdr-12);
+    }
+
+    @media (min-width: 576px) {
+      border-radius: var(--bdr-16);
+
+      img {
+        border-radius: var(--bdr-16);
+      }
+    }
+
+    @media (min-width: 992px) {
+      border-radius: var(--bdr-20);
+
+      img {
+        border-radius: var(--bdr-20);
+      }
+    }
   }
 `
 

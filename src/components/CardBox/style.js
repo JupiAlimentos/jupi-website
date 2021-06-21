@@ -6,8 +6,12 @@ export const CardBoxWrapper = styled.article`
   flex-direction: column;
   width: 100%;
   background-color: #fff;
-  border-radius: var(--bdr-20);
   overflow: hidden;
+  border-radius: var(--bdr-12);
+
+  img {
+    border-radius: 12px 12px 0 0;
+  }
 
   .linkText {
     margin-top: auto;
@@ -24,16 +28,32 @@ export const CardBoxWrapper = styled.article`
     }
   }
 
+  @media (min-width: 576px) {
+    border-radius: var(--bdr-16);
+
+    img {
+      border-radius: 16px 16px 0 0;
+    }
+  }
+
   @media (min-width: 768px) and (max-width: 991.98px) {
     [class^='col-']:first-child &,
     [class*=' col-']:first-child & {
       margin-bottom: 2.5rem;
     }
   }
+
+  @media (min-width: 992px) {
+    border-radius: var(--bdr-20);
+
+    img {
+      border-radius: 20px 20px 0 0;
+    }
+  }
 `
 
 export const CardBoxImage = styled(GatsbyImage)`
-  border-radius: var(--bdr-20) var(--bdr-20) 0 0;
+  border-radius: 12px 12px 0 0;
   background-color: var(--header-color);
 `
 

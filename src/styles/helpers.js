@@ -57,13 +57,20 @@ export const helpers = css`
     }
   }
 
+  .verticalTxtSpacer {
+    @media (max-width: 575.98px) {
+      padding-right: 1.875rem;
+      padding-left: 1.875rem;
+    }
+  }
+
   .verticalSpacer {
     padding-top: 2.5rem;
-    padding-bottom: 8.75rem;
+    padding-bottom: 5.75rem;
 
     @media (min-width: 768px) {
       padding-top: 4.625rem;
-      padding-bottom: 8.75rem;
+      padding-bottom: 6.75rem;
     }
 
     @media (min-width: 992px) {
@@ -349,6 +356,10 @@ export const helpers = css`
 
   .gap-2 {
     gap: 0.5rem !important;
+  }
+
+  .offset-1 {
+    margin-left: 8.3333333333%;
   }
 
   @media (min-width: 768px) {

@@ -18,8 +18,9 @@ const GlobalStyles = createGlobalStyle`
     --header-color: #1c1d1f;
     --highlight: #e02d2d;
     --yellow: #FFEE00;
-    --bdr-40: 2.5rem;
     --bdr-20: 1.25rem;
+    --bdr-16: 1rem;
+    --bdr-12: 0.75rem;
     --bdr-8: 0.5rem;
   }
 
