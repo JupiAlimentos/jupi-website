@@ -72,22 +72,22 @@ export const grid = css`
 
   .g-2,
   .gx-2 {
-    --gd-gutter-x: 1.5rem;
+    --gd-gutter-x: 1rem;
   }
 
   .g-2,
   .gy-2 {
-    --gd-gutter-y: 1.5rem;
+    --gd-gutter-y: 1rem;
   }
 
   .g-3,
   .gx-3 {
-    --gd-gutter-x: 2rem;
+    --gd-gutter-x: 1.5rem;
   }
 
   .g-3,
   .gy-3 {
-    --gd-gutter-y: 2rem;
+    --gd-gutter-y: 1.5rem;
   }
 
   .g-4,

@@ -7,7 +7,9 @@ const Attendance = () => (
   <Layout>
     <Seo title='Atendimento' />
     <section className='container mt-40'>
-      <h1 className='txt-center'>Página de Atendimento</h1>
+      <header className='container'>
+        <h2 className='topSectionHeadings'>Onde encontrar nossos produtos?</h2>
+      </header>
     </section>
   </Layout>
 )

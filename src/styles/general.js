@@ -32,7 +32,7 @@ export const general = css`
   .infoCover {
     margin-top: 1.875rem;
     font-size: 1.5rem;
-    line-height: 1.688rem;
+    line-height: 1.4;
 
     @media (max-width: 575.98px) {
       font-size: 1.3rem;
