@@ -9,11 +9,12 @@ const SocialActions = () => {
   return (
     <section className='container'>
       <h2 className='sectionHeadings'>Ações Sociais</h2>
-      <div className='row'>
+      <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
         <div className='col-md-12 col-lg-4 d-flex'>
           <CardBox
             titleCard='Tem degustação no Carvalho Super'
             infoCard='No aniversário do @carvalhosupermercado da Santa Maria da Codipi, em Teresina, levamos uma degustação do melhor cuscuz do Brasil. Até a Dona Van Fernandes provou e aprovou o cuscuz feito com o Flocão de Milho Jupi. E você? Já provou seu cuscuz JUPI hoje?'
+            slug='/acoes'
           >
             <StaticImage
               src='../../images/actions/action01.jpg'
@@ -27,6 +28,7 @@ const SocialActions = () => {
           <CardBox
             titleCard='Aula Show com Lia Formiga'
             infoCard='Lia Formiga, uma das maiores especialistas em culinária e gastronomia, esteve no Carvalho Super da Avenida Joaquim Nelson no Dirceu, na primeira Aula Show! O evento foi gratuito e os participantes puderam aprender as melhores receitas com produtos Jupi para usar no dia a dia!'
+            slug='/acoes'
           >
             <StaticImage
               src='../../images/actions/action02.jpg'
@@ -40,6 +42,7 @@ const SocialActions = () => {
           <CardBox
             titleCard='Jupi também na Cidade Junina'
             infoCard='A Jupi esteve presente nos 8 dias do Cidade Junina, levando muita alegria e, é claro, com as delícias preparadas com os produtos JUPI. Agradecemos a oportunidade de fazer parte da maior festa junina do Piauí.'
+            slug='/acoes'
           >
             <StaticImage
               src='../../images/actions/action03.jpg'

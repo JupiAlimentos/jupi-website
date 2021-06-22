@@ -19,15 +19,6 @@ export const CardBoxWrapper = styled.article`
     padding-left: 1.875rem;
   }
 
-  @media (max-width: 767.98px) {
-    margin-bottom: 2.5rem;
-
-    [class^='col-']:last-child &,
-    [class*=' col-']:last-child & {
-      margin-bottom: 0;
-    }
-  }
-
   @media (min-width: 576px) {
     border-radius: var(--bdr-16);
 
@@ -36,16 +27,7 @@ export const CardBoxWrapper = styled.article`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    [class^='col-']:first-child &,
-    [class*=' col-']:first-child & {
-      margin-bottom: 2.5rem;
-    }
-  }
-
   @media (min-width: 992px) {
-    border-radius: var(--bdr-20);
-
     img {
       border-radius: 20px 20px 0 0;
     }
@@ -78,5 +60,4 @@ export const CardBoxInfo = styled.p`
   font-size: 16px;
   line-height: 21px;
   padding: 0 1.875rem;
-  margin-bottom: 1.063rem;
 `

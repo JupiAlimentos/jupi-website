@@ -8,7 +8,7 @@ import {
   CardBoxInfo
 } from './style'
 
-const CardBox = ({ children, titleCard, infoCard }) => (
+const CardBox = ({ children, titleCard, infoCard, slug }) => (
   <CardBoxWrapper>
     {children}
     <CardBoxWrapperInfo>
@@ -17,7 +17,7 @@ const CardBox = ({ children, titleCard, infoCard }) => (
     <CardBoxWrapperInfo>
       <CardBoxInfo>{infoCard}</CardBoxInfo>
     </CardBoxWrapperInfo>
-    <Link className='linkText' to='/acoes'>
+    <Link className='linkText' to={slug} title={titleCard}>
       Veja mais <span className='arrow' />
     </Link>
   </CardBoxWrapper>
