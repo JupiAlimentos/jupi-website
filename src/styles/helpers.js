@@ -25,6 +25,10 @@ export const helpers = css`
     margin-bottom: 0 !important;
   }
 
+  .mb-30 {
+    margin-bottom: 1.875rem;
+  }
+
   .ml-auto {
     margin-left: auto;
   }

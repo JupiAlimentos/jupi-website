@@ -4,18 +4,18 @@ import { Link } from 'gatsby'
 import Button from '../Button'
 import GbiBridged from './BackGround'
 
+import partiner01 from '../../images/partners/partner-1.jpg'
+import partiner02 from '../../images/partners/partner-2.jpg'
+import partiner03 from '../../images/partners/partner-3.jpg'
+import partiner04 from '../../images/partners/partner-4.jpg'
+import partiner05 from '../../images/partners/partner-5.jpg'
+
 import {
   AttendanceList,
   AttendanceTitle,
   AttendanceItem,
   AttendanceContent
 } from './style'
-
-import partiner01 from '../../images/partners/partner-1.jpg'
-import partiner02 from '../../images/partners/partner-2.jpg'
-import partiner03 from '../../images/partners/partner-3.jpg'
-import partiner04 from '../../images/partners/partner-4.jpg'
-import partiner05 from '../../images/partners/partner-5.jpg'
 
 const Meet = () => (
   <section className='container bottomSpacer'>

@@ -2,15 +2,21 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
+import AttendanceComponent from '../components/Attendance'
 
 const Attendance = () => (
   <Layout>
     <Seo title='Atendimento' />
-    <section className='container mt-40'>
+    <div className='container mt-40'>
       <header className='container'>
-        <h2 className='topSectionHeadings'>Onde encontrar nossos produtos?</h2>
+        <h2 className='topSectionHeadings mb-30'>
+          Onde encontrar nossos produtos?
+        </h2>
       </header>
-    </section>
+    </div>
+    <div className='container'>
+      <AttendanceComponent />
+    </div>
   </Layout>
 )
 
