@@ -9,7 +9,7 @@ const Recipes = () => (
   <Layout>
     <Seo title='Receitas' />
     <div className='container'>
-      <h2 className='topSectionHeadings'>Nossas receitas</h2>
+      <h2 className='topSectionHeadings'>Últimas Receitas</h2>
       <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
         <div className='col d-flex'>
           <CardBox

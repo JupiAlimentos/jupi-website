@@ -40,8 +40,8 @@ module.exports = {
         name: 'jupi-alimentos',
         short_name: 'jupi',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#e02d2d',
+        theme_color: '#e02d2d',
         display: 'minimal-ui',
         icon: 'src/images/icons/jupi-icon.png' // This path is relative to the root of the site.
       }

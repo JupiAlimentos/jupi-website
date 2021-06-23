@@ -83,7 +83,7 @@ export const HighlightsWrapper = styled.div`
 export const Highlight = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.625rem;
+  padding: 2.25rem 1.625rem 2rem;
   text-align: center;
   border-radius: var(--bdr-12);
   background-color: #fff;
