@@ -8,14 +8,8 @@ import CardBox from '../components/CardBox'
 const Recipes = () => (
   <Layout>
     <Seo title='Receitas' />
-    <div className='container mt-40'>
-      <header className='container'>
-        <h2 className='topSectionHeadings mb-30'>
-          Onde encontrar nossos produtos?
-        </h2>
-      </header>
-    </div>
     <div className='container'>
+      <h2 className='topSectionHeadings'>Nossas receitas</h2>
       <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
         <div className='col d-flex'>
           <CardBox

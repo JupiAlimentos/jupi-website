@@ -17,7 +17,7 @@ const Highlights = () => {
     <HighlightsSpacer className='container'>
       <h2 className='sectionHeadings'>Destaques</h2>
       <HighlightsWrapper className='row'>
-        <div className='col-12'>
+        <div className='col-12 d-flex'>
           <Highlight>
             <HighlightTitle>Flocão de Milho</HighlightTitle>
             <StaticImage
@@ -43,7 +43,7 @@ const Highlights = () => {
             </Button>
           </Highlight>
         </div>
-        <div className='col-12'>
+        <div className='col-12 d-flex'>
           <Highlight>
             <HighlightTitle>Feijão Carioca</HighlightTitle>
             <StaticImage
@@ -69,7 +69,7 @@ const Highlights = () => {
             </Button>
           </Highlight>
         </div>
-        <div className='col-12'>
+        <div className='col-12 d-flex'>
           <Highlight>
             <HighlightTitle>Goma de Mandioca</HighlightTitle>
             <StaticImage
@@ -95,7 +95,7 @@ const Highlights = () => {
             </Button>
           </Highlight>
         </div>
-        <div className='col-12'>
+        <div className='col-12 d-flex'>
           <Highlight>
             <HighlightTitle>Canjica Amarela</HighlightTitle>
             <StaticImage

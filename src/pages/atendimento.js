@@ -7,14 +7,8 @@ import AttendanceComponent from '../components/Attendance'
 const Attendance = () => (
   <Layout>
     <Seo title='Atendimento' />
-    <div className='container mt-40'>
-      <header className='container'>
-        <h2 className='topSectionHeadings mb-30'>
-          Onde encontrar nossos produtos?
-        </h2>
-      </header>
-    </div>
     <div className='container'>
+      <h2 className='topSectionHeadings'>Onde encontrar nossos produtos?</h2>
       <AttendanceComponent />
     </div>
   </Layout>

@@ -9,10 +9,8 @@ import ContactInfo from '../components/ContactInfo'
 const Contact = () => (
   <Layout>
     <Seo title='Contato' />
-    <section className='container mt-40'>
-      <header className='container'>
-        <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
-      </header>
+    <section className='container'>
+      <h2 className='topSectionHeadings'>Visite a Jupi Alimentos</h2>
       <Cover>
         <StaticImage
           src='../images/cover-contact-jupi.jpg'
