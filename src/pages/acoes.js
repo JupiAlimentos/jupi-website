@@ -53,6 +53,34 @@ const Actions = () => (
             />
           </CardBox>
         </div>
+        <div className='col d-flex'>
+          <CardBox
+            titleCard='Festival Gastronômico Maria Isabel'
+            infoCard='Os produtos e a valorização da culinária piauiense.'
+            slug='/acoes'
+          >
+            <StaticImage
+              src='../images/actions/action04.jpg'
+              alt='Festival Gastronômico Maria Isabel'
+              placeholder='blurred'
+              layout='fullWidth'
+            />
+          </CardBox>
+        </div>
+        <div className='col d-flex'>
+          <CardBox
+            titleCard='Roleta da Sorte'
+            infoCard='Mais uma promoção da JUPI, mais sorte pra você.'
+            slug='/acoes'
+          >
+            <StaticImage
+              src='../images/actions/action05.jpg'
+              alt='Roleta da Sorte'
+              placeholder='blurred'
+              layout='fullWidth'
+            />
+          </CardBox>
+        </div>
       </div>
     </div>
   </Layout>
