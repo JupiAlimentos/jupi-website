@@ -3,7 +3,7 @@ import React from 'react'
 import contactinfos from './data'
 
 const ContactInfo = () => (
-  <div className='row innerContainer row-cols-1 row-cols-md-2 row-cols-lg-3 g-3'>
+  <div className='row innerContainer row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
     {contactinfos.map((contactinfo, i) => (
       <div className='col' key={i}>
         <div className='generalBox'>

@@ -1,0 +1,7 @@
+---
+date: 2019-03-23 15:00:00
+title: Degustação JUPI no Carvalho Super da Santa Maria da CODIPI
+description: Aniversário do Carvalho Supermercado da Santa Maria da Codipi.
+---
+
+No aniversário do @carvalhosupermercado da Santa Maria da Codipi, em Teresina, levamos uma degustação do melhor cuscuz do Brasil. Até a Dona Van Fernandes provou e aprovou o cuscuz feito com o Flocão de Milho Jupi. E você? Já provou seu cuscuz JUPI hoje?
