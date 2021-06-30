@@ -9,13 +9,17 @@ import { useStaticQuery, graphql } from 'gatsby'
 const Actions = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
-      query ActionList {
+      query MyQuery {
         allMarkdownRemark {
           edges {
             node {
+              id
               frontmatter {
                 description
                 title
+              }
+              fields {
+                slug
               }
             }
           }
@@ -36,11 +40,13 @@ const Actions = () => {
           {actionList.map(
             ({
               node: {
-                frontmatter: { description, title }
+                id,
+                frontmatter: { description, title },
+                fields: { slug }
               }
             }) => (
-              <div key={title} className='col d-flex'>
-                <CardBox titleCard={title} infoCard={description} slug='/acoes'>
+              <div key={id} className='col d-flex'>
+                <CardBox titleCard={title} infoCard={description} slug={slug}>
                   <StaticImage
                     src='../images/actions/action01.jpg'
                     alt={title}
