@@ -1,34 +1,13 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import CardBox from '../components/CardBox'
-import { useStaticQuery, graphql } from 'gatsby'
 
-const Actions = () => {
-  const { allMarkdownRemark } = useStaticQuery(
-    graphql`
-      query MyQuery {
-        allMarkdownRemark {
-          edges {
-            node {
-              id
-              frontmatter {
-                description
-                title
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-
-  const actionList = allMarkdownRemark.edges
+const ListOfActions = props => {
+  const actionList = props.data.allMarkdownRemark.edges
 
   return (
     <Layout>
@@ -63,4 +42,28 @@ const Actions = () => {
   )
 }
 
-export default Actions
+export const query = graphql`
+  query actionList($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            description
+            title
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
+
+export default ListOfActions
