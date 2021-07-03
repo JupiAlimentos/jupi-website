@@ -29,11 +29,12 @@ export const PaginationLink = styled(Link)`
   color: var(--header-color);
   padding: 0.625rem 0.938rem;
   text-decoration: none;
-  background-color: #e3e4e6;
+  background-color: #fff;
   border-radius: var(--bdr-8);
 
   &:hover,
   &.active {
-    background-color: #fff;
+    color: #fff;
+    background-color: var(--header-color);
   }
 `
