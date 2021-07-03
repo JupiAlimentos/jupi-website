@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export const ButtonWrapper = styled(Link)`
   display: inline-block;
-  padding: 0.938rem 1.75rem;
+  padding: 0.938rem 2.125rem;
   font-size: 0.813rem;
   line-height: 16px;
   font-weight: 700;

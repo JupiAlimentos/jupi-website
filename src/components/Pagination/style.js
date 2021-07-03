@@ -19,7 +19,8 @@ export const PaginationItem = styled.li`
   }
 
   p {
-    padding: 0.625rem 0.938rem;
+    padding: 0.625rem 1rem;
+    color: var(--header-color);
   }
 `
 
@@ -27,7 +28,7 @@ export const PaginationLink = styled(Link)`
   position: relative;
   display: block;
   color: var(--header-color);
-  padding: 0.625rem 1.75rem;
+  padding: 0.625rem 2.125rem;
   text-decoration: none;
   background-color: #fff;
   border-radius: 5.625rem;
