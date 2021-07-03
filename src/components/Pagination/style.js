@@ -27,10 +27,10 @@ export const PaginationLink = styled(Link)`
   position: relative;
   display: block;
   color: var(--header-color);
-  padding: 0.625rem 0.938rem;
+  padding: 0.625rem 1.75rem;
   text-decoration: none;
   background-color: #fff;
-  border-radius: var(--bdr-8);
+  border-radius: 5.625rem;
 
   &:hover,
   &.active {
