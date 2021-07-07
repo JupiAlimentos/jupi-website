@@ -60,4 +60,5 @@ export const CardBoxInfo = styled.p`
   font-size: 16px;
   line-height: 21px;
   padding: 0 1.875rem;
+  margin-bottom: 0;
 `

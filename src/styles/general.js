@@ -70,6 +70,7 @@ export const general = css`
       font-weight: 500;
       font-size: 18px;
       line-height: 27px;
+      margin-bottom: 0;
 
       a {
         color: var(--highlight);
@@ -260,7 +261,7 @@ export const general = css`
   }
 
   .highlightBody {
-    font-size: 1.375rem;
+    font-size: 1.313rem;
   }
 
   .divider {

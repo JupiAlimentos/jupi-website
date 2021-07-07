@@ -13,7 +13,7 @@ export const SocialLink = styled.a`
 
 export const SocialLinkIcon = styled.div`
   svg {
-    color: var(--brand);
+    color: #fff;
     width: 36px;
     height: 36px;
     transition: color 0.3s;

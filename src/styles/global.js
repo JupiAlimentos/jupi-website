@@ -41,7 +41,105 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+
+  .highlightBody {
+    a {
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+      transform: translate3d(0, -4px, 0);
+      display: inline-block;
+      transition: transform 0.2s 0.05s cubic-bezier(0.2, 0.57, 0.67, 1.53);
+
+      &:hover {
+        transform: translate3d(0, 0, 0);
+        transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+        transition-duration: 0.4s;
+        transition-delay: 0s;
+      }
+    }
+
+    a::before,
+    a::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      top: 100%;
+      left: 0;
+      pointer-events: none;
+    }
+
+    a::before {
+      content: '';
+      height: 3px;
+      border-radius: 20px;
+      transform: scale3d(1, 1, 1);
+      transition: transform 0.2s, opacity 0.2s;
+      transition-timing-function: cubic-bezier(0.2, 0.57, 0.67, 1.53);
+    }
+    
+    a:hover::before {
+      transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+      transition-duration: 0.4s;
+      opacity: 1;
+      transform: scale3d(1.2, 0.1, 1);
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  code {
+    word-wrap: break-word;
+  }
+
+  dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 1.875rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+  
+  ul {
+    list-style-type: disc;
+    
+    ul {
+      list-style-type: circle;
+    }
+  }
+
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid var(--highlight);
+    margin: 0 0 1.5rem;
+    padding: 1.5rem 0.625rem 0.1rem 1rem;
+    border-radius: var(--bdr-8);
+  }
+
   a {
+    color: var(--highlight);
     transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     
     &:not([class]) {
@@ -55,11 +153,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1.425rem;
     font-family: var(--header-font), sans-serif;
     font-weight: 900;
     line-height: 1.2;
     color: var(--header-color);
+    margin-bottom: 1.5rem;
   }
 
   h1 {

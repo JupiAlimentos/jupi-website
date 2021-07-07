@@ -223,6 +223,12 @@ export const MenuList = styled.ul`
       align-items: center;
     }
   }
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 `
 
 export const MenuLeft = styled.nav`
@@ -261,6 +267,7 @@ export const MenuLink = styled(Link)`
   font-family: var(--body-font), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.231px;
+  color: var(--body-color);
   opacity: 0.88;
 
   &:hover,

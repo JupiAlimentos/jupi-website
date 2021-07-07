@@ -54,6 +54,7 @@ export const MenuBrand = styled(Link)`
   left: 50%;
   margin-left: -65.57px;
   z-index: 1;
+  color: #fff;
 
   img {
     display: block;
@@ -114,6 +115,7 @@ export const MenuLink = styled(Link)`
   text-transform: uppercase;
   letter-spacing: 0.231px;
   opacity: 0.88;
+  color: #fff;
 
   &:hover,
   &.active {
