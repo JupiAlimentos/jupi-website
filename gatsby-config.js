@@ -27,6 +27,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'updload-images',
+        path: `${__dirname}/static/assets/images`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'images',
         path: `${__dirname}/src/images`
       }
@@ -39,14 +46,29 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: []
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-relative-images-v2',
+            options: {
+              name: 'updload-images'
+            }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1386,
+              linkImagesToOriginal: false
+            }
+          },
+          'gatsby-remark-lazy-load'
+        ]
       }
     },
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
@@ -8,7 +8,7 @@ import CardBox from '../components/CardBox'
 import Pagination from '../components/Pagination'
 
 const ListOfActions = props => {
-  const actionList = props.data.allMarkdownRemark.edges
+  const actionList = props.data.allMdx.edges
 
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
@@ -28,15 +28,15 @@ const ListOfActions = props => {
             ({
               node: {
                 id,
-                frontmatter: { description, title },
+                frontmatter: { description, title, coverImage },
                 fields: { slug }
               }
             }) => (
               <div key={id} className='col d-flex'>
                 <CardBox titleCard={title} infoCard={description} slug={slug}>
-                  <StaticImage
-                    src='../images/actions/action01.jpg'
+                  <GatsbyImage
                     alt={title}
+                    image={coverImage.childImageSharp.gatsbyImageData}
                     placeholder='blurred'
                     layout='fullWidth'
                   />
@@ -60,7 +60,7 @@ const ListOfActions = props => {
 
 export const query = graphql`
   query actionList($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
       skip: $skip
@@ -72,6 +72,15 @@ export const query = graphql`
             description
             title
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            coverImage {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                  layout: CONSTRAINED
+                )
+              }
+            }
           }
           fields {
             slug

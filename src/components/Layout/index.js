@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyles />
       <MenuBar />
-      <main>{children}</main>
+      <div>{children}</div>
       <Footer />
     </>
   )
