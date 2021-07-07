@@ -95,20 +95,26 @@ export const Highlight = styled.div`
   }
 
   .gatsby-image-wrapper {
-    margin: 0 12%;
+    margin: 0 18%;
     display: block;
     margin-bottom: 1rem;
   }
 
   @media (max-width: 1199.98px) {
     .gatsby-image-wrapper {
-      margin: 0 16% 1rem;
+      margin: 0 20% 1rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .gatsby-image-wrapper {
+      margin: 0 26% 1rem;
     }
   }
 
   @media (max-width: 767.98px) {
     .gatsby-image-wrapper {
-      margin: 0 20% 1rem;
+      margin: 0 24% 1rem;
     }
   }
 
