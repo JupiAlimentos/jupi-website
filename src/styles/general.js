@@ -262,6 +262,53 @@ export const general = css`
 
   .highlightBody {
     font-size: 1.313rem;
+
+    .gatsby-resp-image-wrapper {
+      margin: 3rem 0;
+    }
+
+    a {
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+      transform: translate3d(0, -4px, 0);
+      display: inline-block;
+      transition: transform 0.2s 0.05s cubic-bezier(0.2, 0.57, 0.67, 1.53);
+
+      &:hover {
+        transform: translate3d(0, 0, 0);
+        transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+        transition-duration: 0.4s;
+        transition-delay: 0s;
+      }
+    }
+
+    a::before,
+    a::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      top: 100%;
+      left: 0;
+      pointer-events: none;
+    }
+
+    a::before {
+      content: '';
+      height: 3px;
+      border-radius: 20px;
+      transform: scale3d(1, 1, 1);
+      transition: transform 0.2s, opacity 0.2s;
+      transition-timing-function: cubic-bezier(0.2, 0.57, 0.67, 1.53);
+    }
+
+    a:hover::before {
+      transition-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+      transition-duration: 0.4s;
+      opacity: 1;
+      transform: scale3d(1.2, 0.1, 1);
+    }
   }
 
   .divider {
