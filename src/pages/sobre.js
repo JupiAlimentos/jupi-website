@@ -21,7 +21,7 @@ const About = () => (
     <div className='container verticalSpacer'>
       <div className='row'>
         <div className='col-12 col-lg-10 offset-lg-1 verticalTxtSpacer'>
-          <h1 className='mainTitle'>Conheça a nossa história</h1>
+          <h1 className='postTitle'>Conheça a nossa história</h1>
           <p className='highlightBody'>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam

@@ -254,14 +254,26 @@ export const general = css`
     }
   }
 
-  .mainTitle {
+  .postTitle {
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--header-color);
+    margin-bottom: 2rem;
+  }
+
+  .postDescription {
+    font-weight: 200;
+    font-size: calc(1.475rem + 0.4vw);
+    margin-bottom: 0.5rem;
+  }
+
+  .postDate {
+    font-size: 1.125rem;
+    opacity: 0.7;
   }
 
   .highlightBody {
-    font-size: 1.313rem;
+    font-size: 1.375rem;
 
     .gatsby-resp-image-wrapper {
       margin: 3rem 0;

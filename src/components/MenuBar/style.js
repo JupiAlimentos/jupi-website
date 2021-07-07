@@ -209,6 +209,8 @@ export const MenuWrapper = styled.div`
 `
 
 export const MenuList = styled.ul`
+  list-style: none;
+
   @media (max-width: 991.98px) {
     li {
       margin-bottom: 1.4rem;

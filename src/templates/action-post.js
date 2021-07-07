@@ -15,6 +15,9 @@ const ActionPost = ({ data }) => {
     <Layout>
       <Seo title={action.frontmatter.title} />
       <section className='container mt-main'>
+        <h1 className='postTitle'>{action.frontmatter.title}</h1>
+        <h2 className='postDescription'>{action.frontmatter.description}</h2>
+        <p className='postDate'>{action.frontmatter.date}</p>
         <Cover>
           <GatsbyImage
             image={image}
@@ -27,8 +30,6 @@ const ActionPost = ({ data }) => {
       <div className='container verticalSpacer'>
         <div className='row'>
           <div className='col-12 col-lg-10 offset-lg-1 verticalTxtSpacer'>
-            <h1 className='mainTitle'>{action.frontmatter.title}</h1>
-            <p>{action.frontmatter.description}</p>
             <main className='highlightBody'>
               <MDXRenderer>{action.body}</MDXRenderer>
             </main>
