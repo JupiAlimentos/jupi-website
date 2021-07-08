@@ -9,7 +9,7 @@ const About = () => (
   <Layout>
     <Seo title='Sobre Nós' />
     <section className='container mt-main'>
-      <Cover>
+      <Cover className='mb-0'>
         <StaticImage
           src='../images/cover-contact-jupi.jpg'
           alt='Visite a Jupi Alimentos'

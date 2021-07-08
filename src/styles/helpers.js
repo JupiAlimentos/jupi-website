@@ -41,11 +41,11 @@ export const helpers = css`
     margin-top: 7rem;
 
     @media (min-width: 576px) {
-      margin-top: 8.625rem;
+      margin-top: 7.5rem;
     }
 
     @media (min-width: 992px) {
-      margin-top: 10.625rem;
+      margin-top: 9rem;
     }
   }
 
@@ -73,12 +73,12 @@ export const helpers = css`
     padding-bottom: 5.75rem;
 
     @media (min-width: 768px) {
-      padding-top: 4.625rem;
+      padding-top: 3rem;
       padding-bottom: 6.75rem;
     }
 
     @media (min-width: 992px) {
-      padding-top: 5.625rem;
+      padding-top: 3.625rem;
       padding-bottom: 8.75rem;
     }
   }
@@ -375,6 +375,10 @@ export const helpers = css`
   @media (min-width: 992px) {
     .offset-lg-1 {
       margin-left: 8.3333333333%;
+    }
+
+    .offset-lg-2 {
+      margin-left: 16.6666666667%;
     }
   }
 `

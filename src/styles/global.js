@@ -111,7 +111,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 900;
     line-height: 1.2;
     color: var(--header-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
   }
 
   h1 {

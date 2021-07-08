@@ -30,7 +30,6 @@ export const general = css`
   }
 
   .infoCover {
-    margin-top: 1.875rem;
     font-size: 1.5rem;
     line-height: 1.4;
 
@@ -258,18 +257,23 @@ export const general = css`
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--header-color);
-    margin-bottom: 2rem;
   }
 
   .postDescription {
     font-weight: 200;
-    font-size: calc(1.475rem + 0.4vw);
-    margin-bottom: 0.5rem;
+    font-size: calc(1.425rem + 0.3vw);
   }
 
   .postDate {
-    font-size: 1.125rem;
+    font-size: 1rem;
     opacity: 0.7;
+    color: var(--highlight);
+    margin-bottom: 0;
+
+    span {
+      padding: 0 0.5rem;
+      color: var(--body-color);
+    }
   }
 
   .highlightBody {

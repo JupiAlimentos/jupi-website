@@ -15,21 +15,35 @@ const ActionPost = ({ data }) => {
     <Layout>
       <Seo title={action.frontmatter.title} />
       <section className='container mt-main'>
-        <h1 className='postTitle'>{action.frontmatter.title}</h1>
-        <h2 className='postDescription'>{action.frontmatter.description}</h2>
-        <p className='postDate'>{action.frontmatter.date}</p>
-        <Cover>
-          <GatsbyImage
-            image={image}
-            alt={action.frontmatter.title}
-            placeholder='blurred'
-            layout='fullWidth'
-          />
-        </Cover>
+        <div className='row'>
+          <header className='col-12 col-lg-8 offset-lg-2'>
+            <h1 className='postTitle'>{action.frontmatter.title}</h1>
+            <h2 className='postDescription'>
+              {action.frontmatter.description}
+            </h2>
+            <p className='postDate'>
+              {action.frontmatter.date}
+              <span> • </span>
+              {action.timeToRead} min de leitura
+            </p>
+          </header>
+        </div>
+        <div className='row'>
+          <div className='col-12 col-lg-10 offset-lg-1'>
+            <Cover className='mb-0'>
+              <GatsbyImage
+                image={image}
+                alt={action.frontmatter.title}
+                placeholder='blurred'
+                layout='fullWidth'
+              />
+            </Cover>
+          </div>
+        </div>
       </section>
       <div className='container verticalSpacer'>
         <div className='row'>
-          <div className='col-12 col-lg-10 offset-lg-1 verticalTxtSpacer'>
+          <div className='col-12 col-lg-8 offset-lg-2 verticalTxtSpacer'>
             <main className='highlightBody'>
               <MDXRenderer>{action.body}</MDXRenderer>
             </main>
@@ -58,6 +72,7 @@ export const query = graphql`
         }
       }
       body
+      timeToRead
     }
   }
 `

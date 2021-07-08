@@ -143,7 +143,9 @@ export const HighlightWrapperInfo = styled.div`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin-bottom: 2.375rem;
+  margin-bottom: 1.5rem;
 `
 
-export const HighlightInfo = styled.p``
+export const HighlightInfo = styled.p`
+  margin-bottom: 0;
+`

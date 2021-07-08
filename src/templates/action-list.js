@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
@@ -34,12 +34,14 @@ const ListOfActions = props => {
             }) => (
               <div key={id} className='col d-flex'>
                 <CardBox titleCard={title} infoCard={description} slug={slug}>
-                  <GatsbyImage
-                    alt={title}
-                    image={coverImage.childImageSharp.gatsbyImageData}
-                    placeholder='blurred'
-                    layout='fullWidth'
-                  />
+                  <Link to={slug} title={title}>
+                    <GatsbyImage
+                      alt={title}
+                      image={coverImage.childImageSharp.gatsbyImageData}
+                      placeholder='blurred'
+                      layout='fullWidth'
+                    />
+                  </Link>
                 </CardBox>
               </div>
             )
