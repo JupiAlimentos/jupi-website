@@ -5,6 +5,12 @@ export const ProductItemWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   margin-bottom: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  }
 `
 
 export const ProductItemImage = styled.div`

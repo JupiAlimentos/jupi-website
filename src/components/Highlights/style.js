@@ -87,6 +87,12 @@ export const Highlight = styled.div`
   text-align: center;
   border-radius: var(--bdr-12);
   background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  }
 
   & > [class^='ButtonWrapper'],
   & > [class*='_ButtonWrapper'] {

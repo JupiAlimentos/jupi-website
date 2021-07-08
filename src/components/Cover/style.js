@@ -5,6 +5,7 @@ export const CoverBoxImage = styled.div`
   margin: 2rem 0;
   background-color: var(--header-color);
   border-radius: var(--bdr-12);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 
   img {
     border-radius: var(--bdr-12);

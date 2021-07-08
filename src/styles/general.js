@@ -88,6 +88,7 @@ export const general = css`
     background-color: #fff;
     border-radius: var(--bdr-12);
     overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 
     &.dark {
       .titleBox,
@@ -148,8 +149,9 @@ export const general = css`
   .wrapperBoxWhite {
     background-color: #fff;
     padding: 3rem 2rem;
-
     border-radius: var(--bdr-12);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s ease, box-shadow 0.2s ease;
 
     img {
       border-radius: var(--bdr-12);
