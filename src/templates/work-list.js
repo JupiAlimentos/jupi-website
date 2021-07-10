@@ -7,8 +7,8 @@ import Seo from '../components/seo'
 import CardBox from '../components/CardBox'
 import Pagination from '../components/Pagination'
 
-const ListOfActions = props => {
-  const actionList = props.data.allMdx.edges
+const ListOfWorks = props => {
+  const workList = props.data.allMdx.edges
 
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
@@ -24,7 +24,7 @@ const ListOfActions = props => {
       <div className='container'>
         <h2 className='topSectionHeadings'>Últimas Ações</h2>
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
-          {actionList.map(
+          {workList.map(
             ({
               node: {
                 id,
@@ -61,7 +61,7 @@ const ListOfActions = props => {
 }
 
 export const query = graphql`
-  query actionList($skip: Int!, $limit: Int!) {
+  query workList($skip: Int!, $limit: Int!) {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
@@ -93,4 +93,4 @@ export const query = graphql`
   }
 `
 
-export default ListOfActions
+export default ListOfWorks

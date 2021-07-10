@@ -69,6 +69,7 @@ const MenuBar = () => {
                     <MenuLink
                       to={link.url}
                       activeClassName='active'
+                      partiallyActive
                       title={link.title}
                     >
                       {link.label}

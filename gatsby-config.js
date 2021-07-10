@@ -41,8 +41,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'actions',
-        path: `${__dirname}/actions`
+        name: 'acoes',
+        path: `${__dirname}/acoes`
       }
     },
     {

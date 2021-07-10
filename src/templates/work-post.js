@@ -7,24 +7,22 @@ import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import Cover from '../components/Cover'
 
-const ActionPost = ({ data }) => {
-  const action = data.mdx
-  const image = getImage(action.frontmatter.coverImage)
+const WorkPost = ({ data }) => {
+  const work = data.mdx
+  const image = getImage(work.frontmatter.coverImage)
 
   return (
     <Layout>
-      <Seo title={action.frontmatter.title} />
+      <Seo title={work.frontmatter.title} />
       <section className='container mt-main'>
         <div className='row'>
           <header className='col-12 col-lg-8 offset-lg-2'>
-            <h1 className='postTitle'>{action.frontmatter.title}</h1>
-            <h2 className='postDescription'>
-              {action.frontmatter.description}
-            </h2>
+            <h1 className='postTitle'>{work.frontmatter.title}</h1>
+            <h2 className='postDescription'>{work.frontmatter.description}</h2>
             <p className='postDate'>
-              {action.frontmatter.date}
+              {work.frontmatter.date}
               <span> • </span>
-              {action.timeToRead} min de leitura
+              {work.timeToRead} min de leitura
             </p>
           </header>
         </div>
@@ -33,7 +31,7 @@ const ActionPost = ({ data }) => {
             <Cover className='mb-0'>
               <GatsbyImage
                 image={image}
-                alt={action.frontmatter.title}
+                alt={work.frontmatter.title}
                 placeholder='blurred'
                 layout='fullWidth'
               />
@@ -45,7 +43,7 @@ const ActionPost = ({ data }) => {
         <div className='row'>
           <div className='col-12 col-lg-8 offset-lg-2 verticalTxtSpacer'>
             <main className='highlightBody'>
-              <MDXRenderer>{action.body}</MDXRenderer>
+              <MDXRenderer>{work.body}</MDXRenderer>
             </main>
           </div>
         </div>
@@ -55,7 +53,7 @@ const ActionPost = ({ data }) => {
 }
 
 export const query = graphql`
-  query Action($slug: String!) {
+  query Work($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
@@ -77,4 +75,4 @@ export const query = graphql`
   }
 `
 
-export default ActionPost
+export default WorkPost

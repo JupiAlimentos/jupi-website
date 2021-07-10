@@ -1,7 +1,7 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
-// To add the slug field to each action/post
+// To add the slug field to each work/post
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
@@ -43,28 +43,28 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const actions = result.data.allMdx.edges
+    const works = result.data.allMdx.edges
 
-    actions.forEach(({ node }) => {
+    works.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve('./src/templates/action-post.js'),
+        component: path.resolve('./src/templates/work-post.js'),
         context: {
           slug: node.fields.slug
         }
       })
     })
 
-    const actionsPerPage = 6
-    const numPages = Math.ceil(actions.length / actionsPerPage)
+    const worksPerPage = 6
+    const numPages = Math.ceil(works.length / worksPerPage)
 
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
         path: index === 0 ? '/acoes' : `acoes/page/${index + 1}`,
-        component: path.resolve('./src/templates/action-list.js'),
+        component: path.resolve('./src/templates/work-list.js'),
         context: {
-          limit: actionsPerPage,
-          skip: index * actionsPerPage,
+          limit: worksPerPage,
+          skip: index * worksPerPage,
           numPages,
           currentPage: index + 1
         }
