@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Jupi Alimentos',
-    description: 'Website of Jupi Alimentos.',
+    description: 'Website da Jupi Alimentos.',
     author: '@laurielmesquita'
   },
   plugins: [
@@ -43,6 +43,13 @@ module.exports = {
       options: {
         name: 'acoes',
         path: `${__dirname}/acoes`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'receitas',
+        path: `${__dirname}/receitas`
       }
     },
     {

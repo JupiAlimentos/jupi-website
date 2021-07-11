@@ -7,28 +7,28 @@ import Seo from '../components/seo'
 import CardBox from '../components/CardBox'
 import Pagination from '../components/Pagination'
 
-const ListOfWorks = props => {
-  const workList = props.data.works.edges
+const ListOfRecipes = props => {
+  const recipeList = props.data.recipes.edges
 
   const {
-    currentWorkPage: currentPage,
-    numWorksPages: numPages
+    currentRecipePage: currentPage,
+    numRecipesPages: numPages
   } = props.pageContext
 
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage =
-    currentPage - 1 === 1 ? '/acoes' : `/acoes/page/${currentPage - 1}`
-  const nextPage = `/acoes/page/${currentPage + 1}`
+    currentPage - 1 === 1 ? '/receitas' : `/receitas/page/${currentPage - 1}`
+  const nextPage = `/receitas/page/${currentPage + 1}`
 
   return (
     <Layout>
-      <Seo title='Ações' />
+      <Seo title='Receitas' />
 
       <div className='container'>
-        <h2 className='topSectionHeadings'>Últimas Ações</h2>
+        <h2 className='topSectionHeadings'>Últimas Receitas</h2>
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
-          {workList.map(
+          {recipeList.map(
             ({
               node: {
                 id,
@@ -65,9 +65,9 @@ const ListOfWorks = props => {
 }
 
 export const query = graphql`
-  query workList($skip: Int!, $limit: Int!) {
-    works: allMdx(
-      filter: { fileAbsolutePath: { glob: "**/acoes/*.mdx" } }
+  query recipeList($skip: Int!, $limit: Int!) {
+    recipes: allMdx(
+      filter: { fileAbsolutePath: { glob: "**/receitas/*.mdx" } }
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
       skip: $skip
@@ -98,4 +98,4 @@ export const query = graphql`
   }
 `
 
-export default ListOfWorks
+export default ListOfRecipes
