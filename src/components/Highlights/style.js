@@ -26,6 +26,7 @@ export const HighlightsWrapper = styled.div`
   flex-wrap: nowrap !important;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding-top: 1rem;
   padding-bottom: 1.375rem;
   margin-bottom: 6rem;
 
@@ -81,9 +82,10 @@ export const HighlightsWrapper = styled.div`
 `
 
 export const Highlight = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2.25rem 1.625rem 2rem;
+  padding: 2.25rem 1.625rem 2.6rem;
   text-align: center;
   border-radius: var(--bdr-12);
   background-color: #fff;

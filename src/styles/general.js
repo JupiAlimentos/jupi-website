@@ -100,6 +100,10 @@ export const general = css`
         }
       }
 
+      .titleBox {
+        font-size: 2.3rem;
+      }
+
       .infoBox {
         margin-bottom: 1rem;
         opacity: 0.73;

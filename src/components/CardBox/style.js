@@ -11,12 +11,22 @@ export const CardBoxWrapper = styled.article`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transition: opacity 0.2s ease, box-shadow 0.2s ease;
 
-  &:hover {
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  .gatsby-image-wrapper {
+    img {
+      transition: transform 400ms ease-in-out 0s;
+
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
   }
 
   img {
     border-radius: 12px 12px 0 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
   }
 
   .linkText {

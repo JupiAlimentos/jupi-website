@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const AttendanceList = styled.ul`
   margin-bottom: 0.375rem;
+  padding-inline-start: 0;
 `
 
 export const AttendanceItem = styled.li`
