@@ -28,10 +28,8 @@ const Highlights = () => {
             />
             <HighlightWrapperInfo>
               <HighlightInfo>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                commodi ipsa ex, quos, animi quae omnis aliquam porro sunt
-                impedit consequatur. Quod accusamus sit velit, molestias quo
-                maiores quasi deserunt.
+                Sabor e energia para começar o dia, para o lanche e para todo
+                momento. Produzido a partir de milho não...
               </HighlightInfo>
             </HighlightWrapperInfo>
             <Button
@@ -54,10 +52,8 @@ const Highlights = () => {
             />
             <HighlightWrapperInfo>
               <HighlightInfo>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
-                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
-                amet doloribus temporibus ea odit possimus.
+                O queridinho dos brasileiros! Possui grãos de cor bege e rajas
+                marrom que lembram o calçadão de Copacabana...
               </HighlightInfo>
             </HighlightWrapperInfo>
             <Button
@@ -80,10 +76,8 @@ const Highlights = () => {
             />
             <HighlightWrapperInfo>
               <HighlightInfo>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
-                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
-                amet doloribus temporibus ea odit possimus.
+                Sucesso absoluto, faz bonito em todas as horas. A Goma de
+                Mandioca Jupi tem qualidade e...
               </HighlightInfo>
             </HighlightWrapperInfo>
             <Button
@@ -106,10 +100,8 @@ const Highlights = () => {
             />
             <HighlightWrapperInfo>
               <HighlightInfo>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                possimus? Molestiae nesciunt optio odit veniam laboriosam iusto
-                numquam odio magnam. Perspiciatis beatae cupiditate voluptatum
-                amet doloribus temporibus ea odit possimus.
+                Faz sucesso desde a época da vovó e só de pensar dá água na
+                boca! Tipicamente brasileira, a canjica...
               </HighlightInfo>
             </HighlightWrapperInfo>
             <Button

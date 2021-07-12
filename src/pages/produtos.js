@@ -15,7 +15,7 @@ const Products = () => (
         {/* Line 01 */}
         <ProductItemWide
           title='Conheça a Fava Jupi'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Sabor que é sucesso! Fonte de proteínas e fibras, ainda contém vitaminas como as do Complexo B e Vitamina C.'
           slug='/'
         >
           <StaticImage
@@ -29,7 +29,7 @@ const Products = () => (
         {/* Line 02 */}
         <ProductItemWide
           title='Linha de Farinhas Jupi'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Fonte de energia, devido aos carboidratos de sua composição, a farinha de mandioca branca Tio Jady é um delicioso...'
           slug='/'
         >
           <StaticImage
@@ -43,7 +43,7 @@ const Products = () => (
         {/* Line 03 */}
         <ProductItem
           title='Flocão de Milho e Arroz'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Sabor e energia para começar o dia, para o lanche e para todo momento. Produzido a partir de milho não...'
           slug='/'
         >
           <StaticImage
@@ -56,7 +56,7 @@ const Products = () => (
 
         <ProductItem
           title='Tapioca e Goma de Mandioca'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='A tapioca nossa de cada dia é consumida de várias formas e deixou de ser só mais um acompanhamento para o...'
           slug='/'
         >
           <StaticImage
@@ -70,7 +70,7 @@ const Products = () => (
         {/* Line 04 */}
         <ProductItemWide
           title='Milho de Pipoca'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Para as horas mais divertidas, ela é companheira inseparável. Mata a fome e é fonte de energia, além de ser rica...'
           slug='/'
         >
           <StaticImage
@@ -84,7 +84,7 @@ const Products = () => (
         {/* Line 05 */}
         <ProductItemWide
           title='Família de Feijões Jupi'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='O queridinho dos brasileiros! Possui grãos de cor bege e rajas marrom que lembram o calçadão de Copacabana...'
           slug='/'
         >
           <StaticImage
@@ -98,7 +98,7 @@ const Products = () => (
         {/* Line 06 */}
         <ProductItem
           title='Nossas Canjicas'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Faz sucesso desde a época da vovó e só de pensar dá água na boca! Tipicamente brasileira, a canjica traz...'
           slug='/'
         >
           <StaticImage
@@ -111,7 +111,7 @@ const Products = () => (
 
         <ProductItem
           title='Fécula de Mandioca'
-          description='Algum texto promocional que descreva a seção. Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.'
+          description='Pães de Queijo, Tapioca, e mais um monte de preparação gostosa leva a fécula de mandioca na receita...'
           slug='/'
         >
           <StaticImage
