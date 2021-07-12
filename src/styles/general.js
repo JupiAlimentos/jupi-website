@@ -329,10 +329,16 @@ export const general = css`
     }
   }
 
+  .bodyLevelUp {
+    font-size: 1.188rem;
+    margin-bottom: 3rem;
+  }
+
   .divider {
     margin-top: 40px;
     margin-bottom: 40px;
     border: 1px solid #e3e4e6;
+    opacity: 0.6;
   }
 
   .bigRoundedCorner {
