@@ -43,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     margin-bottom: 1.5rem;
+    opacity: 0.7;
   }
 
   strong {
