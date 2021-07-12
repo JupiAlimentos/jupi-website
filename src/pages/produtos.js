@@ -27,7 +27,7 @@ const Products = () => (
         </ProductItemWide>
 
         {/* Line 02 */}
-        <ProductItemWide
+        {/* <ProductItemWide
           title='Linha de Farinhas Jupi'
           description='Fonte de energia, devido aos carboidratos de sua composição, a farinha de mandioca branca Tio Jady é um delicioso...'
           slug='/'
@@ -38,7 +38,7 @@ const Products = () => (
             placeholder='blurred'
             layout='constrained'
           />
-        </ProductItemWide>
+        </ProductItemWide> */}
 
         {/* Line 03 */}
         <ProductItem
