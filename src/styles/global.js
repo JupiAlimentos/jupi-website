@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin-top: 5.625rem;
-    color: var(--body-color);
+    color: rgba(110, 112, 120, 0.7);
     min-height: 100vh;
     scroll-behavior: smooth;
     font-family: var(--body-font), -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
@@ -43,7 +43,6 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     margin-bottom: 1.5rem;
-    opacity: 0.7;
   }
 
   strong {
